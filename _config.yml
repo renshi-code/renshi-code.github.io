@@ -12,7 +12,7 @@ title                    : "Lennart Trunk / My Profile"
 title_separator          : "-"
 name                     : &name "Lennart Trunk"
 description              : &description "Graduate student of Computer Engineering"
-url                      : https://scarfix.codes # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://renshi.me # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "thescarfix/thescarfix.github.io"
 
@@ -47,14 +47,14 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "thescarfix" # Replace this with you Bluesky username
+  bluesky          : "renshi.me" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : "thescarfix"
+  instagram        : # Username
   lastfm           : # Username
   linkedin         : "lennart-trunk-85ab7014a"
   mastodon         : # URL
