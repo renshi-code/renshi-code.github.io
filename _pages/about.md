@@ -13,7 +13,7 @@ Hello! I'm Lennart, a Computer Engineering graduate student currently based in T
 
 I have a passion for computers, their architecture, software and more. 
 
-I started my journey in Computer Engineering at Leibniz University Hannover, Germany. Currently I am doing an exchange year at the Tokyo Institute of Technology, taking part in the YSEP Researcher Program at Kise Laboratory. My expertise lies in FPGA and RISC-V.
+I started my journey in Computer Engineering at Leibniz University Hannover, Germany. Currently I am a doctorate student at Kise Laboratory of the Department of Computer Science at the Institute of Science Tokyo. My expertise lies in FPGA and RISC-V.
 
 When I'm not studying, I enjoy studying Japanese, playing video games and watching anime and movies.
 
