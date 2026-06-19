@@ -18,8 +18,9 @@ Education
 
 Work experience
 ======
-* Working student at IT-P GmbH Hannover, Germany (Java Spring)
 * Working student at Wilhelm Wallbrecht GmbH & Co.KG (IT Support/Administration)
+* Working student at HDI AG Hannover, Germany (IT @ Holding)
+* Working student at IT-P GmbH Hannover, Germany (Java Spring)
 * Student Assistant at Leibniz University Hannover (MATLAB/Tutoring)
   
 Skills
