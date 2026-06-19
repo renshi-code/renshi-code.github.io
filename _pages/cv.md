@@ -11,6 +11,7 @@ redirect_from:
 
 Education
 ======
+* Ph.D. student in Computer Science at Institute of Science Tokyo (Kise Laboratory), 2025 - present
 * M.Sc. in Computer Engineering at Leibniz Universität Hannover, 2025
   * YSEP Research Program at Tokyo Institute of Technology (Oct. 2023 - Aug. 2024)
 * B.Sc. in Computer Engineering at Leibniz Universität Hannover, 2022
