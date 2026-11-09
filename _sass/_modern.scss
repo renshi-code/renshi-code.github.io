@@ -1,0 +1,523 @@
+/* ==========================================================================
+   Modern Design System & Adaptive Theme for renshi.me
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Light Theme */
+  --bg-body: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #ffffff;
+  --bg-subtle: #f1f5f9;
+  --bg-muted: #e2e8f0;
+  
+  --border-color: #e2e8f0;
+  --border-color-hover: #cbd5e1;
+  --border-focus: #3b82f6;
+
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-subtle: #94a3b8;
+
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-light: #eff6ff;
+  --accent-border: #bfdbfe;
+
+  --tag-bg: #eef2ff;
+  --tag-text: #3730a3;
+  --tag-border: #c7d2fe;
+
+  --badge-emerald-bg: #ecfdf5;
+  --badge-emerald-text: #065f46;
+  --badge-emerald-border: #a7f3d0;
+
+  --badge-amber-bg: #fffbeb;
+  --badge-amber-text: #92400e;
+  --badge-amber-border: #fde68a;
+
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --card-shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+
+  --navbar-bg: rgba(255, 255, 255, 0.85);
+  --navbar-border: #e2e8f0;
+}
+
+/* Dark Theme */
+html[data-theme="dark"],
+html.dark {
+  --bg-body: #090d16;
+  --bg-surface: #111827;
+  --bg-surface-elevated: #162032;
+  --bg-subtle: #1e293b;
+  --bg-muted: #2d3748;
+
+  --border-color: #1f293d;
+  --border-color-hover: #374151;
+  --border-focus: #60a5fa;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-subtle: #64748b;
+
+  --accent: #3b82f6;
+  --accent-hover: #60a5fa;
+  --accent-light: rgba(59, 130, 246, 0.12);
+  --accent-border: rgba(59, 130, 246, 0.3);
+
+  --tag-bg: rgba(99, 102, 241, 0.15);
+  --tag-text: #c7d2fe;
+  --tag-border: rgba(99, 102, 241, 0.3);
+
+  --badge-emerald-bg: rgba(16, 185, 129, 0.15);
+  --badge-emerald-text: #6ee7b7;
+  --badge-emerald-border: rgba(16, 185, 129, 0.3);
+
+  --badge-amber-bg: rgba(245, 158, 11, 0.15);
+  --badge-amber-text: #fde68a;
+  --badge-amber-border: rgba(245, 158, 11, 0.3);
+
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  --card-shadow-hover: 0 10px 20px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+
+  --navbar-bg: rgba(11, 16, 28, 0.85);
+  --navbar-border: #1f293d;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    --bg-body: #090d16;
+    --bg-surface: #111827;
+    --bg-surface-elevated: #162032;
+    --bg-subtle: #1e293b;
+    --bg-muted: #2d3748;
+
+    --border-color: #1f293d;
+    --border-color-hover: #374151;
+    --border-focus: #60a5fa;
+
+    --text-primary: #f8fafc;
+    --text-secondary: #e2e8f0;
+    --text-muted: #94a3b8;
+    --text-subtle: #64748b;
+
+    --accent: #3b82f6;
+    --accent-hover: #60a5fa;
+    --accent-light: rgba(59, 130, 246, 0.12);
+    --accent-border: rgba(59, 130, 246, 0.3);
+
+    --tag-bg: rgba(99, 102, 241, 0.15);
+    --tag-text: #c7d2fe;
+    --tag-border: rgba(99, 102, 241, 0.3);
+
+    --badge-emerald-bg: rgba(16, 185, 129, 0.15);
+    --badge-emerald-text: #6ee7b7;
+    --badge-emerald-border: rgba(16, 185, 129, 0.3);
+
+    --badge-amber-bg: rgba(245, 158, 11, 0.15);
+    --badge-amber-text: #fde68a;
+    --badge-amber-border: rgba(245, 158, 11, 0.3);
+
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+    --card-shadow-hover: 0 10px 20px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+
+    --navbar-bg: rgba(11, 16, 28, 0.85);
+    --navbar-border: #1f293d;
+  }
+}
+
+/* ==========================================================================
+   Global Resets & Base Overrides
+   ========================================================================== */
+
+body {
+  font-family: var(--font-sans) !important;
+  background-color: var(--bg-body) !important;
+  color: var(--text-primary) !important;
+  line-height: 1.65;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans) !important;
+  color: var(--text-primary) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  &:hover {
+    color: var(--accent-hover);
+  }
+}
+
+code, kbd, samp, pre {
+  font-family: var(--font-mono) !important;
+}
+
+/* Masthead Navigation */
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--navbar-bg) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--navbar-border) !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.masthead__inner-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.masthead__logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.masthead__logo-kanji {
+  font-family: 'Noto Sans JP', var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.375rem;
+  background: var(--accent-light);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  letter-spacing: 0.05em;
+}
+
+/* Japanese & University Badges */
+.kanji-pill {
+  font-family: 'Noto Sans JP', var(--font-sans);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+.kanji-seal {
+  display: inline-block;
+  font-family: 'Noto Sans JP', serif;
+  font-weight: 800;
+  font-size: 0.75rem;
+  color: #ef4444;
+  border: 1.5px solid #ef4444;
+  border-radius: 4px;
+  padding: 0 4px;
+  line-height: 1.3;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
+.affiliation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.75rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  box-shadow: var(--card-shadow);
+  margin-bottom: 0.5rem;
+}
+
+.masthead__menu-item a {
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.15s ease;
+  &:hover {
+    color: var(--accent) !important;
+    background: var(--bg-subtle);
+  }
+}
+
+.masthead__menu-item--lg a {
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  letter-spacing: -0.01em;
+}
+
+/* Theme Toggle Button in Masthead */
+.theme-toggle-btn {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  border-radius: 0.625rem;
+  padding: 0.4rem 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin-left: 0.75rem;
+  &:hover {
+    background: var(--bg-muted);
+    color: var(--text-primary);
+    border-color: var(--border-color-hover);
+  }
+}
+
+/* Sidebar & Author Profile */
+.sidebar {
+  background: transparent !important;
+}
+
+.author__avatar img {
+  border-radius: 1.25rem !important;
+  box-shadow: var(--card-shadow) !important;
+  border: 2px solid var(--border-color) !important;
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.author__name {
+  color: var(--text-primary) !important;
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em;
+}
+
+.author__bio {
+  color: var(--text-muted) !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5;
+}
+
+.author__urls-wrapper {
+  background: var(--bg-surface) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 1rem !important;
+  padding: 1rem !important;
+  box-shadow: var(--card-shadow);
+}
+
+.author__urls li,
+.author__urls a {
+  color: var(--text-secondary) !important;
+  font-size: 0.875rem !important;
+  &:hover {
+    color: var(--accent) !important;
+  }
+}
+
+/* ==========================================================================
+   Modern Bento Grid & UI Components
+   ========================================================================== */
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+  margin: 1.75rem 0;
+}
+
+.bento-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:hover {
+    border-color: var(--accent-border);
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-2px);
+  }
+}
+
+.bento-col-12 { grid-column: span 12; }
+.bento-col-8  { grid-column: span 8; }
+.bento-col-7  { grid-column: span 7; }
+.bento-col-5  { grid-column: span 5; }
+.bento-col-4  { grid-column: span 4; }
+.bento-col-6  { grid-column: span 6; }
+
+@media (max-width: 900px) {
+  .bento-col-8,
+  .bento-col-7,
+  .bento-col-5,
+  .bento-col-4,
+  .bento-col-6 {
+    grid-column: span 12 !important;
+  }
+}
+
+/* Modern Card Layout for Portfolio & Publications */
+.modern-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: all 0.2s ease;
+  &:hover {
+    border-color: var(--accent-border);
+    box-shadow: var(--card-shadow-hover);
+  }
+}
+
+/* Badges & Tags */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 0.5rem;
+  line-height: 1.2;
+}
+
+.badge-blue {
+  background: var(--accent-light);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+}
+
+.badge-emerald {
+  background: var(--badge-emerald-bg);
+  color: var(--badge-emerald-text);
+  border: 1px solid var(--badge-emerald-border);
+}
+
+.badge-amber {
+  background: var(--badge-amber-bg);
+  color: var(--badge-amber-text);
+  border: 1px solid var(--badge-amber-border);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.tag-item {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--tag-border);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 0.5rem;
+}
+
+/* Modern Buttons */
+.btn-modern-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--accent);
+  color: #ffffff !important;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.625rem;
+  transition: all 0.15s ease;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  &:hover {
+    background: var(--accent-hover);
+    color: #ffffff !important;
+    transform: translateY(-1px);
+  }
+}
+
+.btn-modern-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-subtle);
+  color: var(--text-primary) !important;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.15s ease;
+  &:hover {
+    background: var(--bg-muted);
+    border-color: var(--border-color-hover);
+    transform: translateY(-1px);
+  }
+}
+
+/* Archive item override */
+.archive__item {
+  background: var(--bg-surface) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 1.25rem !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  box-shadow: var(--card-shadow) !important;
+  transition: all 0.2s ease !important;
+  &:hover {
+    border-color: var(--accent-border) !important;
+    box-shadow: var(--card-shadow-hover) !important;
+    transform: translateY(-2px);
+  }
+}
+
+.archive__item-title {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.5rem !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  a {
+    color: var(--text-primary) !important;
+    &:hover {
+      color: var(--accent) !important;
+    }
+  }
+}
+
+.archive__item-excerpt {
+  color: var(--text-muted) !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.6;
+}
+
+.page__footer {
+  background: var(--bg-surface) !important;
+  border-top: 1px solid var(--border-color) !important;
+  color: var(--text-muted) !important;
+  margin-top: 3rem;
+  padding: 2rem 0;
+}

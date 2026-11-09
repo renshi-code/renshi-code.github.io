@@ -52,13 +52,27 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% if post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}">{{ post.paperurl }}</a></p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }} </p>
-    {% elsif post.paperurl %}
-      <p class="wordwrap">Download <a href=" {{ post.paperurl }} ">here</a></p>
+    {% if post.citation %}
+      <p class="archive__item-citation"><strong>Citation:</strong> {{ post.citation }}</p>
     {% endif %}
+
+    <div class="archive__item-actions" style="margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+      {% if post.summaryurl %}
+        <a href="{{ post.summaryurl }}" class="btn-modern-primary" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-file-alt"></i> IEICE Summary
+        </a>
+      {% endif %}
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" class="btn-modern-outline" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-download"></i> Paper / Report
+        </a>
+      {% endif %}
+      {% if post.github %}
+        <a href="{{ post.github }}" class="btn-modern-outline" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> Repository
+        </a>
+      {% endif %}
+    </div>
 
   </article>
 </div>

@@ -29,4 +29,42 @@
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+<!-- Google Fonts: Inter & Noto Sans JP for modern bilingual typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- Adaptive Theme Initialization (Zero FOUC) -->
+<script>
+  (function() {
+    try {
+      var saved = localStorage.getItem('theme-mode');
+      var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var activeTheme = saved ? saved : (systemDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', activeTheme);
+      if (activeTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (e) {}
+  })();
+
+  function toggleSiteTheme() {
+    var current = document.documentElement.getAttribute('data-theme') || 'light';
+    var next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    if (next === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    localStorage.setItem('theme-mode', next);
+    var label = document.getElementById('theme-toggle-indicator');
+    if (label) {
+      label.textContent = next === 'dark' ? '🌙' : '☀️';
+    }
+  }
+</script>
+
 <!-- end custom head snippets -->

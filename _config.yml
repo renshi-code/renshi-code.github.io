@@ -14,7 +14,7 @@ name                     : &name "Lennart Trunk"
 description              : &description "Doctorate student researching Computer Architecture, RTL Simulation, and RISC-V"
 url                      : https://renshi.me # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "thescarfix/thescarfix.github.io"
+repository               : "renshi-code/renshi-code.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Lennart Trunk"
   pronouns         : "he/him"  
-  bio              : "Doctorate student researching Computer Architecture, RTL Simulation, and RISC-V at Institute of Science Tokyo"
+  bio              : "Doctorate student researching Computer Architecture, RTL Simulation, and RISC-V at Institute of Science Tokyo (ArchLab / 吉瀬研究室)"
   location         : "Tokyo, JP"
-  employer         : "Institute of Science Tokyo"
+  employer         : "Institute of Science Tokyo (東京科学大学)"
   uri              : # URL
   email            : "trunk.l.588d@m.isct.ac.jp" 
 

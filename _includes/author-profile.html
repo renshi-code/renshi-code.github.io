@@ -15,7 +15,10 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <h3 class="author__name">{{ author.name }} <span class="kanji-seal">蓮士</span></h3>
+    <div class="affiliation-badge" style="margin-top: 0.35rem; margin-bottom: 0.5rem; font-size: 0.75rem; font-weight: 600;">
+      <span>東京科学大学</span> • <a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline dotted;">吉瀬研 ArchLab</a>
+    </div>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
@@ -28,8 +31,9 @@
         <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
       {% if author.employer %}
-        <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
+        <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i><a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer" style="color: inherit;">{{ author.employer }}</a></li>
       {% endif %}
+      <li><a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-microchip icon-pad-right" aria-hidden="true"></i>ArchLab (吉瀬研)</a></li>
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
