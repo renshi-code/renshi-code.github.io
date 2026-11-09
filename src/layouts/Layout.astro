@@ -1,0 +1,148 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Lennart Trunk — Computer Architecture & RISC-V",
+  description = "Ph.D. student researching Computer Architecture, RTL Simulation Acceleration, and RISC-V at Institute of Science Tokyo (ArchLab)",
+} = Astro.props;
+
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { name: 'Overview', href: '/' },
+  { name: 'Portfolio', href: '/portfolio' },
+  { name: 'Publications', href: '/publications' },
+  { name: 'CV', href: '/cv' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Lennart Trunk" />
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon-180x180.png" />
+
+    <!-- Open Graph & Social Cards -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:image" content="https://renshi.me/images/profile.png" />
+
+    <!-- Instant Zero-FOUC Theme Initialization -->
+    <script is:inline>
+      (function() {
+        try {
+          const stored = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (_) {}
+      })();
+    </script>
+  </head>
+
+  <body class="bg-[#f8faf8] dark:bg-obsidian-900 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200">
+    <!-- Sticky Glassmorphic Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/85 dark:bg-obsidian-900/85 border-b border-matcha-100 dark:border-obsidian-border transition-colors duration-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2.5 group">
+          <div class="w-9 h-9 rounded-xl bg-matcha-50 dark:bg-matcha-accent/15 border border-matcha-200 dark:border-matcha-accent/30 flex items-center justify-center font-bold text-sm text-matcha-700 dark:text-matcha-accent group-hover:scale-105 transition-transform">
+            LT
+          </div>
+          <span class="font-bold text-base tracking-tight text-slate-900 dark:text-white group-hover:text-matcha-600 dark:group-hover:text-matcha-accent transition-colors">
+            Lennart Trunk
+          </span>
+        </a>
+
+        <!-- Nav Links & Theme Toggle -->
+        <div class="flex items-center gap-1 sm:gap-2">
+          <nav class="flex items-center gap-0.5 sm:gap-1 text-sm font-medium">
+            {navItems.map((item) => {
+              const isActive = item.href === '/' 
+                ? currentPath === '/' 
+                : currentPath.startsWith(item.href);
+              return (
+                <a
+                  href={item.href}
+                  class:list={[
+                    'px-3 py-1.5 rounded-lg transition-all',
+                    isActive
+                      ? 'bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-700 dark:text-matcha-accent font-semibold shadow-xs'
+                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-obsidian-800',
+                  ]}
+                >
+                  {item.name}
+                </a>
+              );
+            })}
+          </nav>
+
+          <div class="h-5 w-px bg-slate-200 dark:bg-obsidian-border mx-1"></div>
+
+          <!-- Theme Switcher Button -->
+          <button
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle theme"
+            class="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-obsidian-800 border border-slate-200 dark:border-obsidian-border transition-all"
+          >
+            <!-- Sun icon (shown in dark mode) -->
+            <svg class="w-4 h-4 hidden dark:block text-amber-300" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+            </svg>
+            <!-- Moon icon (shown in light mode) -->
+            <svg class="w-4 h-4 block dark:hidden text-slate-700" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Slot -->
+    <div class="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 py-8">
+      <slot />
+    </div>
+
+    <!-- Modern Site Footer -->
+    <footer class="mt-auto border-t border-slate-200 dark:border-obsidian-border bg-white dark:bg-obsidian-850 py-8 text-xs text-slate-500 dark:text-slate-400">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <span>&copy; {new Date().getFullYear()} Lennart Trunk. Built with Astro &amp; Tailwind CSS.</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-4 font-medium">
+          <a href="https://github.com/renshi-code" target="_blank" rel="noopener noreferrer" class="hover:text-matcha-600 dark:hover:text-matcha-accent transition-colors">GitHub</a>
+          <a href="https://www.linkedin.com/in/lennart-trunk-85ab7014a" target="_blank" rel="noopener noreferrer" class="hover:text-matcha-600 dark:hover:text-matcha-accent transition-colors">LinkedIn</a>
+          <a href="https://bsky.app/profile/renshi.me" target="_blank" rel="noopener noreferrer" class="hover:text-matcha-600 dark:hover:text-matcha-accent transition-colors">Bluesky</a>
+          <a href="mailto:trunk.l.588d@m.isct.ac.jp" class="hover:text-matcha-600 dark:hover:text-matcha-accent transition-colors">Email</a>
+          <a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer" class="hover:text-matcha-600 dark:hover:text-matcha-accent transition-colors">ArchLab</a>
+        </div>
+      </div>
+    </footer>
+
+    <script is:inline>
+      const toggleBtn = document.getElementById('theme-toggle');
+      if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+          const isDark = document.documentElement.classList.toggle('dark');
+          localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+      }
+    </script>
+  </body>
+</html>

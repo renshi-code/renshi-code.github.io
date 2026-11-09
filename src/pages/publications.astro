@@ -1,0 +1,154 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Sidebar from '../components/Sidebar.astro';
+---
+
+<Layout
+  title="Publications — Lennart Trunk"
+  description="Peer-reviewed publications, IEICE technical reports, and IEEE conference papers by Lennart Trunk."
+>
+  <div class="flex flex-col lg:flex-row gap-8 items-start">
+    <Sidebar />
+
+    <main class="flex-1 min-w-0 space-y-8">
+      <!-- Page Header -->
+      <div class="space-y-2">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-sakura-50 dark:bg-sakura-600/15 text-sakura-600 dark:text-sakura-400 border border-sakura-200 dark:border-sakura-500/30">
+            Research Papers • 論文
+          </span>
+          <span class="text-xs text-slate-400 dark:text-slate-500 font-mono">Publications</span>
+        </div>
+        <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          Publications &amp; Reports
+        </h1>
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300">
+          Peer-reviewed conference publications, technical committee reports, and upcoming research papers.
+        </p>
+      </div>
+
+      <!-- Publications List -->
+      <div class="space-y-6">
+        <!-- Publication 1: Forthcoming IEEE MCSoC 2026 -->
+        <article class="bg-white dark:bg-obsidian-800 rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-obsidian-border hover:border-sakura-400 dark:hover:border-sakura-400/50 shadow-xs transition-all space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-sakura-50 dark:bg-sakura-600/15 text-sakura-600 dark:text-sakura-400 border border-sakura-200 dark:border-sakura-500/30">
+                To Appear • 注目
+              </span>
+              <span class="px-2 py-0.5 rounded-md text-xs font-mono bg-slate-100 dark:bg-obsidian-850 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-obsidian-border">
+                December 2026
+              </span>
+            </div>
+            <span class="text-xs font-medium text-slate-400 dark:text-slate-500">IEEE MCSoC 2026</span>
+          </div>
+
+          <div>
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+              Cycle-Accurate Pipeline Simulation and Custom Function Unit Verification in SimRV
+            </h2>
+            <p class="mt-1 text-sm font-medium text-matcha-700 dark:text-matcha-accent">
+              <strong>Lennart Trunk</strong>, Kenji Kise
+            </p>
+            <p class="mt-1 text-xs text-slate-500 dark:text-slate-400 italic">
+              IEEE International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC 2026)
+            </p>
+          </div>
+
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            This work investigates the fidelity of cycle-accurate software simulation for RISC-V processors extended with domain-specific Custom Function Units (CFU). We demonstrate rigorous behavioral parity between synthesizable Verilog RTL simulated with Verilator and a high-performance C++ 5-stage coroutine pipeline simulator (SimRV), enabling rapid architectural exploration without sacrificing hardware accuracy.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              IEEE MCSoC
+            </span>
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              RISC-V Custom Function Units
+            </span>
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              Verilator Parity
+            </span>
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              C++20 Coroutines
+            </span>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 dark:border-obsidian-border flex items-center justify-between text-xs font-semibold">
+            <span class="text-sakura-600 dark:text-sakura-400">Presentation Scheduled: December 2026</span>
+            <a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent">
+              ArchLab &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Publication 2: IEICE VCC Paper -->
+        <article class="bg-white dark:bg-obsidian-800 rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-xs transition-all space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-700 dark:text-matcha-accent border border-matcha-200 dark:border-matcha-accent/30">
+                Technical Report • 技報
+              </span>
+              <span class="px-2 py-0.5 rounded-md text-xs font-mono bg-slate-100 dark:bg-obsidian-850 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-obsidian-border">
+                January 2026
+              </span>
+            </div>
+            <span class="text-xs font-medium text-slate-400 dark:text-slate-500">IEICE RECONF / VLD</span>
+          </div>
+
+          <div>
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+              Design and Implementation of a Verilog HDL Compiler to Accelerate RTL Simulation
+            </h2>
+            <p class="mt-1 text-sm font-medium text-matcha-700 dark:text-matcha-accent">
+              <strong>Lennart Trunk</strong>, Yuki Yagi, Kenji Kise
+            </p>
+            <p class="mt-1 text-xs text-slate-500 dark:text-slate-400 italic">
+              IEICE Technical Report, Vol. 125, No. 342, RECONF2025-120 / VLD2025-69, pp. 119-124 (January 27, 2026)
+            </p>
+          </div>
+
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            This paper presents the design and implementation of a Verilog HDL compiler (referred to as the VCC compiler) aimed at accelerating the simulation of RTL circuits developed using Verilog HDL. The work was conducted at the Kise Laboratory, Department of Computer Science, Institute of Science Tokyo.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              Verilog HDL
+            </span>
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              RTL Simulation
+            </span>
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              Compiler Optimizations
+            </span>
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              Hardware Verification
+            </span>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 dark:border-obsidian-border flex flex-wrap items-center gap-3">
+            <a
+              href="https://www.ieice.org/publications/search/summary.php?id=141053&tbl=ken&lang=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-matcha-600 hover:bg-matcha-700 text-white shadow-xs transition-colors"
+            >
+              <span>IEICE Summary (#141053)</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+            </a>
+            <a
+              href="https://ken.ieice.org/ken/paper/20260127ocqa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-obsidian-850 hover:bg-slate-200 dark:hover:bg-obsidian-750 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-obsidian-border transition-colors"
+            >
+              <span>IEICE Paper Record (2026-01-27)</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+</Layout>

@@ -1,0 +1,204 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Sidebar from '../components/Sidebar.astro';
+---
+
+<Layout
+  title="Curriculum Vitae — Lennart Trunk"
+  description="Academic background, research experience, and engineering history of Lennart Trunk at Institute of Science Tokyo and Leibniz University Hannover."
+>
+  <div class="flex flex-col lg:flex-row gap-8 items-start">
+    <Sidebar />
+
+    <main class="flex-1 min-w-0 space-y-10">
+      <!-- Page Header -->
+      <div class="space-y-2">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-700 dark:text-matcha-accent border border-matcha-200 dark:border-matcha-accent/30">
+            Timeline • 経歴
+          </span>
+          <span class="text-xs text-slate-400 dark:text-slate-500 font-mono">CV</span>
+        </div>
+        <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          Curriculum Vitae
+        </h1>
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300">
+          Academic education, international exchange programs, and professional software engineering experience.
+        </p>
+      </div>
+
+      <!-- Education Section -->
+      <section class="space-y-4">
+        <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+          <span>Education</span>
+          <span class="text-xs px-2 py-0.5 rounded-md bg-slate-100 dark:bg-obsidian-800 text-slate-500 dark:text-slate-400 font-medium">学歴</span>
+        </h2>
+
+        <div class="space-y-4">
+          <!-- Ph.D. -->
+          <div class="bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all space-y-2">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  Doctor of Philosophy (Ph.D.) in Computer Science
+                </h3>
+                <p class="text-sm font-semibold text-matcha-700 dark:text-matcha-accent">
+                  Institute of Science Tokyo (東京科学大学)
+                </p>
+                <p class="text-xs text-slate-500 dark:text-slate-400">
+                  <a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                    Kise Laboratory (ArchLab / 吉瀬研究室)
+                  </a>
+                </p>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-700 dark:text-matcha-accent border border-matcha-200 dark:border-matcha-accent/30">
+                2025 — Present
+              </span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed pt-1">
+              Research in Computer Architecture, high-speed RTL simulation compilers (VCC), cycle-accurate RISC-V processor simulation with C++ coroutines (SimRV), and FPGA acceleration.
+            </p>
+          </div>
+
+          <!-- M.Sc. with YSEP -->
+          <div class="bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all space-y-3">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  Master of Science (M.Sc.) in Computer Engineering
+                </h3>
+                <p class="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                  Leibniz Universität Hannover (Germany)
+                </p>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                2022 — 2025
+              </span>
+            </div>
+
+            <!-- YSEP Subcard -->
+            <div class="p-3.5 rounded-xl bg-sakura-50/50 dark:bg-sakura-600/10 border border-sakura-200 dark:border-sakura-500/20 text-xs space-y-1">
+              <div class="flex flex-wrap items-center justify-between gap-1">
+                <span class="font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                  <span>🇯🇵 YSEP Research Program (Young Scientist Exchange Program)</span>
+                </span>
+                <span class="text-[11px] font-mono text-sakura-600 dark:text-sakura-400">Oct 2023 — Aug 2024</span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300">
+                Tokyo Institute of Technology (東京工業大学) • International research scholar in Computer Architecture at ArchLab.
+              </p>
+            </div>
+          </div>
+
+          <!-- B.Sc. -->
+          <div class="bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all space-y-2">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                  Bachelor of Science (B.Sc.) in Computer Engineering
+                </h3>
+                <p class="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                  Leibniz Universität Hannover (Germany)
+                </p>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                2018 — 2022
+              </span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              Foundations in digital hardware design, algorithms, computer systems architecture, and embedded programming.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experience Section -->
+      <section class="space-y-4">
+        <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+          <span>Work Experience</span>
+          <span class="text-xs px-2 py-0.5 rounded-md bg-slate-100 dark:bg-obsidian-800 text-slate-500 dark:text-slate-400 font-medium">職歴</span>
+        </h2>
+
+        <div class="space-y-4">
+          <!-- Job 1: HDI -->
+          <div class="bg-white dark:bg-obsidian-800 rounded-2xl p-5 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">
+              Working Student — IT @ Holding
+            </h3>
+            <p class="text-xs font-semibold text-matcha-700 dark:text-matcha-accent">
+              HDI AG (Hannover, Germany)
+            </p>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              Corporate holding IT infrastructure management, enterprise systems support, automated monitoring, and process optimization.
+            </p>
+          </div>
+
+          <!-- Job 2: IT-P -->
+          <div class="bg-white dark:bg-obsidian-800 rounded-2xl p-5 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">
+              Working Student — Software Development (Java Spring)
+            </h3>
+            <p class="text-xs font-semibold text-matcha-700 dark:text-matcha-accent">
+              IT-P GmbH (Hannover, Germany)
+            </p>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              Enterprise backend application engineering utilizing the Java Spring Framework, RESTful microservices, and relational database systems.
+            </p>
+          </div>
+
+          <!-- Job 3: Wallbrecht -->
+          <div class="bg-white dark:bg-obsidian-800 rounded-2xl p-5 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">
+              Working Student — IT Support &amp; Administration
+            </h3>
+            <p class="text-xs font-semibold text-matcha-700 dark:text-matcha-accent">
+              Wilhelm Wallbrecht GmbH &amp; Co. KG
+            </p>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              Linux and Windows server administration, local network operations, workstation lifecycle maintenance, and internal user support.
+            </p>
+          </div>
+
+          <!-- Job 4: Tutoring -->
+          <div class="bg-white dark:bg-obsidian-800 rounded-2xl p-5 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all space-y-1.5">
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">
+              Student Assistant — MATLAB &amp; Tutoring
+            </h3>
+            <p class="text-xs font-semibold text-matcha-700 dark:text-matcha-accent">
+              Leibniz Universität Hannover
+            </p>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              Tutor for engineering students covering MATLAB programming, numerical computing methods, algorithmic simulation, and lab assignments.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills & Languages Section -->
+      <section class="space-y-4">
+        <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+          Skills &amp; Languages
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="p-5 rounded-2xl bg-white dark:bg-obsidian-800 border border-slate-200 dark:border-obsidian-border space-y-2">
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">Technical Expertise</h3>
+            <div class="space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+              <p><strong class="text-slate-800 dark:text-slate-200">Hardware &amp; Simulation:</strong> RISC-V (RV32/64IMAC), Verilog HDL, RTL Compilation, Verilator, FPGA Prototyping (AMD Vivado)</p>
+              <p><strong class="text-slate-800 dark:text-slate-200">Software &amp; Systems:</strong> Modern C++ (C++20 coroutines, templates), C, Python, Java (Spring), Git, Linux, Docker</p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white dark:bg-obsidian-800 border border-slate-200 dark:border-obsidian-border space-y-2">
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">Languages</h3>
+            <div class="space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+              <p><strong class="text-slate-800 dark:text-slate-200">German:</strong> Native (Muttersprache)</p>
+              <p><strong class="text-slate-800 dark:text-slate-200">English:</strong> Fluent (Professional proficiency)</p>
+              <p><strong class="text-slate-800 dark:text-slate-200">Japanese:</strong> Conversational (日本語学習中 🌸)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</Layout>
