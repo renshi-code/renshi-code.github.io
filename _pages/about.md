@@ -9,15 +9,15 @@ redirect_from:
 
 <div class="hero-intro" style="margin-bottom: 2rem;">
   <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-    <span class="kanji-pill"><span class="kanji-seal">蓮士</span> 初めまして</span>
-    <span class="badge badge-blue">Doctorate Researcher</span>
+    <span class="kanji-pill">初めまして</span>
+    <span class="badge badge-matcha">Doctorate Researcher</span>
     <a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer" class="badge badge-emerald" style="text-decoration: none;">ArchLab (吉瀬研) • 東京科学大学 &rarr;</a>
   </div>
   <h1 style="font-size: 2.25rem; font-weight: 800; line-height: 1.2; margin-top: 0.25rem; margin-bottom: 0.75rem; letter-spacing: -0.03em;">
     Accelerating Digital Hardware Simulation & RISC-V Microarchitecture
   </h1>
   <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7; max-width: 820px;">
-    Hello! I'm Lennart Trunk (レナート・トゥランク / 蓮士), a Computer Engineering Ph.D. student at <strong>Institute of Science Tokyo</strong> (東京科学大学, formerly Tokyo Tech) in the <strong>Architecture Laboratory (<a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer">ArchLab / 吉瀬研究室</a>)</strong>. My research investigates novel compiler infrastructure for high-speed RTL simulation acceleration, cycle-accurate RISC-V CPU modeling, and FPGA hardware prototyping.
+    Hello! I'm Lennart Trunk, a Computer Engineering Ph.D. student at <strong>Institute of Science Tokyo</strong> (東京科学大学, formerly Tokyo Tech) in the <strong>Architecture Laboratory (<a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer">ArchLab / 吉瀬研究室</a>)</strong>. My research investigates novel compiler infrastructure for high-speed RTL simulation acceleration, cycle-accurate RISC-V CPU modeling, and FPGA hardware prototyping.
   </p>
 </div>
 
@@ -55,11 +55,11 @@ redirect_from:
   </div>
 
   <!-- Bento 2: Upcoming IEEE Milestone (Col 4) -->
-  <div class="bento-card bento-col-4" style="border-left: 3px solid #f59e0b;">
+  <div class="bento-card bento-col-4" style="border-left: 3px solid var(--sakura);">
     <div>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-        <span class="badge badge-amber">Upcoming • 注目</span>
-        <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: #f59e0b; font-weight: 700;">Dec 2026</span>
+        <span class="badge badge-sakura">Upcoming • 注目</span>
+        <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--sakura); font-weight: 700;">Dec 2026</span>
       </div>
       <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.25rem;">
         IEEE MCSoC 2026 Conference Paper
@@ -68,7 +68,7 @@ redirect_from:
         Cycle-accuracy and behavioral parity between synthesizable RVProc Verilog RTL in Verilator and SimRV's 5-stage coroutine pipeline model with Custom Function Units (CFU).
       </p>
     </div>
-    <div style="padding: 0.75rem 0.85rem; border-radius: 0.75rem; background: var(--badge-amber-bg); border: 1px solid var(--badge-amber-border); font-size: 0.8125rem; color: var(--badge-amber-text);">
+    <div style="padding: 0.75rem 0.85rem; border-radius: 0.75rem; background: var(--badge-sakura-bg); border: 1px solid var(--badge-sakura-border); font-size: 0.8125rem; color: var(--badge-sakura-text);">
       <strong>IEEE International Symposium on Embedded Multicore SoCs</strong><br>
       Presentation & Proceedings (December 2026)
     </div>
@@ -203,7 +203,7 @@ redirect_from:
         <div class="tag-list">
           <span class="tag-item" style="background: var(--accent-light); color: var(--accent); border-color: var(--accent-border);">German (母国語)</span>
           <span class="tag-item" style="background: var(--accent-light); color: var(--accent); border-color: var(--accent-border);">English (Fluent)</span>
-          <span class="tag-item" style="background: var(--badge-emerald-bg); color: var(--badge-emerald-text); border-color: var(--badge-emerald-border);">Japanese (日本語学習中)</span>
+          <span class="tag-item" style="background: var(--badge-sakura-bg); color: var(--badge-sakura-text); border-color: var(--badge-sakura-border);">Japanese (日本語学習中 🌸)</span>
         </div>
       </div>
     </div>

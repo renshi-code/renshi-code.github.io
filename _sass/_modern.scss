@@ -8,127 +8,162 @@
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  /* Light Theme */
-  --bg-body: #f8fafc;
+  /* ========================================================================
+     Light Theme: 抹茶 (Matcha) & 桜 (Sakura) on 和紙 (Washi)
+     ======================================================================== */
+  --bg-body: #f9faf8;
   --bg-surface: #ffffff;
   --bg-surface-elevated: #ffffff;
-  --bg-subtle: #f1f5f9;
-  --bg-muted: #e2e8f0;
+  --bg-subtle: #f0f5f1;
+  --bg-muted: #e2ebe4;
   
-  --border-color: #e2e8f0;
-  --border-color-hover: #cbd5e1;
-  --border-focus: #3b82f6;
+  --border-color: #e1e9e3;
+  --border-color-hover: #cbd9ce;
+  --border-focus: #2d6a4f;
 
-  --text-primary: #0f172a;
-  --text-secondary: #334155;
-  --text-muted: #64748b;
-  --text-subtle: #94a3b8;
+  --text-primary: #16221a;
+  --text-secondary: #2d4033;
+  --text-muted: #5a7262;
+  --text-subtle: #889f8f;
 
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --accent-light: #eff6ff;
-  --accent-border: #bfdbfe;
+  /* Matcha Green Accents (抹茶) */
+  --accent: #2d6a4f;
+  --accent-hover: #1b4332;
+  --accent-light: #eaf4ee;
+  --accent-border: #b7d9c5;
 
-  --tag-bg: #eef2ff;
-  --tag-text: #3730a3;
-  --tag-border: #c7d2fe;
+  /* Sakura Blossom Accents (桜) */
+  --sakura: #d94677;
+  --sakura-hover: #be185d;
+  --sakura-light: #fdf2f4;
+  --sakura-border: #fbcfe8;
 
-  --badge-emerald-bg: #ecfdf5;
-  --badge-emerald-text: #065f46;
-  --badge-emerald-border: #a7f3d0;
+  --tag-bg: #edf5f0;
+  --tag-text: #23533e;
+  --tag-border: #c4decb;
 
-  --badge-amber-bg: #fffbeb;
-  --badge-amber-text: #92400e;
-  --badge-amber-border: #fde68a;
+  --badge-emerald-bg: #eaf4ee;
+  --badge-emerald-text: #1b4332;
+  --badge-emerald-border: #b7d9c5;
 
-  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-  --card-shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  --badge-sakura-bg: #fdf2f4;
+  --badge-sakura-text: #9d174d;
+  --badge-sakura-border: #fbcfe8;
 
-  --navbar-bg: rgba(255, 255, 255, 0.85);
-  --navbar-border: #e2e8f0;
+  --badge-amber-bg: #fef9ee;
+  --badge-amber-text: #854d0e;
+  --badge-amber-border: #fde047;
+
+  --card-shadow: 0 4px 6px -1px rgba(22, 34, 26, 0.05), 0 2px 4px -2px rgba(22, 34, 26, 0.04);
+  --card-shadow-hover: 0 10px 18px -3px rgba(22, 34, 26, 0.09), 0 4px 6px -4px rgba(22, 34, 26, 0.04);
+
+  --navbar-bg: rgba(249, 250, 248, 0.88);
+  --navbar-border: #e1e9e3;
 }
 
-/* Dark Theme */
+/* ========================================================================
+   Dark Theme: 夜桜 (Yozakura) & 濃茶 (Koicha)
+   ======================================================================== */
 html[data-theme="dark"],
 html.dark {
-  --bg-body: #090d16;
-  --bg-surface: #111827;
-  --bg-surface-elevated: #162032;
-  --bg-subtle: #1e293b;
-  --bg-muted: #2d3748;
+  --bg-body: #09110c;
+  --bg-surface: #111d15;
+  --bg-surface-elevated: #17261d;
+  --bg-subtle: #1a2c22;
+  --bg-muted: #253d30;
 
-  --border-color: #1f293d;
-  --border-color-hover: #374151;
-  --border-focus: #60a5fa;
+  --border-color: #1f382a;
+  --border-color-hover: #2f543e;
+  --border-focus: #52b788;
 
-  --text-primary: #f8fafc;
-  --text-secondary: #e2e8f0;
-  --text-muted: #94a3b8;
-  --text-subtle: #64748b;
+  --text-primary: #f3f7f4;
+  --text-secondary: #dbe6de;
+  --text-muted: #8da595;
+  --text-subtle: #5f7566;
 
-  --accent: #3b82f6;
-  --accent-hover: #60a5fa;
-  --accent-light: rgba(59, 130, 246, 0.12);
-  --accent-border: rgba(59, 130, 246, 0.3);
+  /* Matcha Young Leaf (若葉) */
+  --accent: #52b788;
+  --accent-hover: #74c69d;
+  --accent-light: rgba(82, 183, 136, 0.15);
+  --accent-border: rgba(82, 183, 136, 0.35);
 
-  --tag-bg: rgba(99, 102, 241, 0.15);
-  --tag-text: #c7d2fe;
-  --tag-border: rgba(99, 102, 241, 0.3);
+  /* Night Sakura (夜桜) */
+  --sakura: #f472b6;
+  --sakura-hover: #f687b3;
+  --sakura-light: rgba(244, 114, 182, 0.16);
+  --sakura-border: rgba(244, 114, 182, 0.35);
 
-  --badge-emerald-bg: rgba(16, 185, 129, 0.15);
-  --badge-emerald-text: #6ee7b7;
-  --badge-emerald-border: rgba(16, 185, 129, 0.3);
+  --tag-bg: rgba(82, 183, 136, 0.12);
+  --tag-text: #b7e4c7;
+  --tag-border: rgba(82, 183, 136, 0.28);
 
-  --badge-amber-bg: rgba(245, 158, 11, 0.15);
-  --badge-amber-text: #fde68a;
-  --badge-amber-border: rgba(245, 158, 11, 0.3);
+  --badge-emerald-bg: rgba(82, 183, 136, 0.16);
+  --badge-emerald-text: #95d5b2;
+  --badge-emerald-border: rgba(82, 183, 136, 0.35);
 
-  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
-  --card-shadow-hover: 0 10px 20px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  --badge-sakura-bg: rgba(244, 114, 182, 0.16);
+  --badge-sakura-text: #fbcfe8;
+  --badge-sakura-border: rgba(244, 114, 182, 0.35);
 
-  --navbar-bg: rgba(11, 16, 28, 0.85);
-  --navbar-border: #1f293d;
+  --badge-amber-bg: rgba(234, 179, 8, 0.15);
+  --badge-amber-text: #fef08a;
+  --badge-amber-border: rgba(234, 179, 8, 0.35);
+
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.25);
+  --card-shadow-hover: 0 10px 22px -3px rgba(0, 0, 0, 0.6), 0 4px 8px -4px rgba(0, 0, 0, 0.35);
+
+  --navbar-bg: rgba(9, 17, 12, 0.88);
+  --navbar-border: #1f382a;
 }
 
 @media (prefers-color-scheme: dark) {
   html:not([data-theme="light"]) {
-    --bg-body: #090d16;
-    --bg-surface: #111827;
-    --bg-surface-elevated: #162032;
-    --bg-subtle: #1e293b;
-    --bg-muted: #2d3748;
+    --bg-body: #09110c;
+    --bg-surface: #111d15;
+    --bg-surface-elevated: #17261d;
+    --bg-subtle: #1a2c22;
+    --bg-muted: #253d30;
 
-    --border-color: #1f293d;
-    --border-color-hover: #374151;
-    --border-focus: #60a5fa;
+    --border-color: #1f382a;
+    --border-color-hover: #2f543e;
+    --border-focus: #52b788;
 
-    --text-primary: #f8fafc;
-    --text-secondary: #e2e8f0;
-    --text-muted: #94a3b8;
-    --text-subtle: #64748b;
+    --text-primary: #f3f7f4;
+    --text-secondary: #dbe6de;
+    --text-muted: #8da595;
+    --text-subtle: #5f7566;
 
-    --accent: #3b82f6;
-    --accent-hover: #60a5fa;
-    --accent-light: rgba(59, 130, 246, 0.12);
-    --accent-border: rgba(59, 130, 246, 0.3);
+    --accent: #52b788;
+    --accent-hover: #74c69d;
+    --accent-light: rgba(82, 183, 136, 0.15);
+    --accent-border: rgba(82, 183, 136, 0.35);
 
-    --tag-bg: rgba(99, 102, 241, 0.15);
-    --tag-text: #c7d2fe;
-    --tag-border: rgba(99, 102, 241, 0.3);
+    --sakura: #f472b6;
+    --sakura-hover: #f687b3;
+    --sakura-light: rgba(244, 114, 182, 0.16);
+    --sakura-border: rgba(244, 114, 182, 0.35);
 
-    --badge-emerald-bg: rgba(16, 185, 129, 0.15);
-    --badge-emerald-text: #6ee7b7;
-    --badge-emerald-border: rgba(16, 185, 129, 0.3);
+    --tag-bg: rgba(82, 183, 136, 0.12);
+    --tag-text: #b7e4c7;
+    --tag-border: rgba(82, 183, 136, 0.28);
 
-    --badge-amber-bg: rgba(245, 158, 11, 0.15);
-    --badge-amber-text: #fde68a;
-    --badge-amber-border: rgba(245, 158, 11, 0.3);
+    --badge-emerald-bg: rgba(82, 183, 136, 0.16);
+    --badge-emerald-text: #95d5b2;
+    --badge-emerald-border: rgba(82, 183, 136, 0.35);
 
-    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
-    --card-shadow-hover: 0 10px 20px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+    --badge-sakura-bg: rgba(244, 114, 182, 0.16);
+    --badge-sakura-text: #fbcfe8;
+    --badge-sakura-border: rgba(244, 114, 182, 0.35);
 
-    --navbar-bg: rgba(11, 16, 28, 0.85);
-    --navbar-border: #1f293d;
+    --badge-amber-bg: rgba(234, 179, 8, 0.15);
+    --badge-amber-text: #fef08a;
+    --badge-amber-border: rgba(234, 179, 8, 0.35);
+
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.25);
+    --card-shadow-hover: 0 10px 22px -3px rgba(0, 0, 0, 0.6), 0 4px 8px -4px rgba(0, 0, 0, 0.35);
+
+    --navbar-bg: rgba(9, 17, 12, 0.88);
+    --navbar-border: #1f382a;
   }
 }
 
@@ -189,18 +224,6 @@ code, kbd, samp, pre {
   gap: 0.5rem;
 }
 
-.masthead__logo-kanji {
-  font-family: 'Noto Sans JP', var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 0.15rem 0.45rem;
-  border-radius: 0.375rem;
-  background: var(--accent-light);
-  color: var(--accent);
-  border: 1px solid var(--accent-border);
-  letter-spacing: 0.05em;
-}
-
 /* Japanese & University Badges */
 .kanji-pill {
   font-family: 'Noto Sans JP', var(--font-sans);
@@ -214,20 +237,6 @@ code, kbd, samp, pre {
   background: var(--bg-subtle);
   border: 1px solid var(--border-color);
   color: var(--text-muted);
-}
-
-.kanji-seal {
-  display: inline-block;
-  font-family: 'Noto Sans JP', serif;
-  font-weight: 800;
-  font-size: 0.75rem;
-  color: #ef4444;
-  border: 1.5px solid #ef4444;
-  border-radius: 4px;
-  padding: 0 4px;
-  line-height: 1.3;
-  margin-right: 0.35rem;
-  vertical-align: middle;
 }
 
 .affiliation-badge {
@@ -404,10 +413,17 @@ code, kbd, samp, pre {
   line-height: 1.2;
 }
 
-.badge-blue {
+.badge-blue,
+.badge-matcha {
   background: var(--accent-light);
   color: var(--accent);
   border: 1px solid var(--accent-border);
+}
+
+.badge-sakura {
+  background: var(--badge-sakura-bg);
+  color: var(--badge-sakura-text);
+  border: 1px solid var(--badge-sakura-border);
 }
 
 .badge-emerald {

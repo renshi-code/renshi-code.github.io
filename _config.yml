@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Lennart Trunk / My Profile"
-title_separator          : "-"
+title                    : "Lennart Trunk"
+title_separator          : "•"
 name                     : &name "Lennart Trunk"
-description              : &description "Doctorate student researching Computer Architecture, RTL Simulation, and RISC-V"
+description              : &description "Ph.D. student researching Computer Architecture, RTL Simulation Acceleration, and RISC-V at Institute of Science Tokyo (ArchLab)"
 url                      : https://renshi.me # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "renshi-code/renshi-code.github.io"
@@ -24,10 +24,10 @@ author:
   avatar           : "profile.png"
   name             : "Lennart Trunk"
   pronouns         : "he/him"  
-  bio              : "Doctorate student researching Computer Architecture, RTL Simulation, and RISC-V at Institute of Science Tokyo (ArchLab / 吉瀬研究室)"
-  location         : "Tokyo, JP"
+  bio              : "Ph.D. student researching Computer Architecture, RTL Simulation Acceleration, and RISC-V at Institute of Science Tokyo (ArchLab / 吉瀬研究室)"
+  location         : "Tokyo, Japan"
   employer         : "Institute of Science Tokyo (東京科学大学)"
-  uri              : # URL
+  uri              : "https://renshi.me"
   email            : "trunk.l.588d@m.isct.ac.jp" 
 
   # Academic websites
