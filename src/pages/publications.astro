@@ -1,6 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Sidebar from '../components/Sidebar.astro';
+
+const bibtexVcc = `@article{trunk2026vcc,
+  author    = {Lennart Trunk and Yuki Yagi and Kenji Kise},
+  title     = {Design and Implementation of a Verilog HDL Compiler to Accelerate RTL Simulation},
+  journal   = {IEICE Technical Report},
+  volume    = {125},
+  number    = {342},
+  pages     = {119--124},
+  year      = {2026},
+  publisher = {The Institute of Electronics, Information and Communication Engineers}
+}`;
+
+const bibtexMcsoc = `@inproceedings{trunk2026simrv,
+  author    = {Lennart Trunk and Kenji Kise},
+  title     = {Cycle-Accurate Pipeline Simulation and Custom Function Unit Verification in SimRV},
+  booktitle = {IEEE International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC)},
+  year      = {2026},
+  month     = {December}
+}`;
 ---
 
 <Layout
@@ -13,11 +32,10 @@ import Sidebar from '../components/Sidebar.astro';
     <main class="flex-1 min-w-0 space-y-8">
       <!-- Page Header -->
       <div class="space-y-2">
-        <div class="flex items-center gap-2">
+        <div>
           <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-sakura-50 dark:bg-sakura-600/15 text-sakura-600 dark:text-sakura-400 border border-sakura-200 dark:border-sakura-500/30">
             Research Papers • 論文
           </span>
-          <span class="text-xs text-slate-400 dark:text-slate-500 font-mono">Publications</span>
         </div>
         <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
           Publications &amp; Reports
@@ -74,6 +92,17 @@ import Sidebar from '../components/Sidebar.astro';
             </span>
           </div>
 
+          <!-- Collapsible BibTeX -->
+          <details class="group text-xs">
+            <summary class="cursor-pointer font-semibold text-slate-500 hover:text-sakura-600 dark:hover:text-sakura-400 flex items-center gap-1.5 select-none">
+              <span class="group-open:rotate-90 transition-transform">&rsaquo;</span>
+              <span>Cite (BibTeX)</span>
+            </summary>
+            <div class="mt-2 relative">
+              <pre class="p-3 rounded-xl bg-slate-900 text-slate-200 font-mono text-[11px] overflow-x-auto border border-slate-800"><code>{bibtexMcsoc}</code></pre>
+            </div>
+          </details>
+
           <div class="pt-4 border-t border-slate-100 dark:border-obsidian-border flex items-center justify-between text-xs font-semibold">
             <span class="text-sakura-600 dark:text-sakura-400">Presentation Scheduled: December 2026</span>
             <a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent">
@@ -127,12 +156,23 @@ import Sidebar from '../components/Sidebar.astro';
             </span>
           </div>
 
+          <!-- Collapsible BibTeX -->
+          <details class="group text-xs">
+            <summary class="cursor-pointer font-semibold text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent flex items-center gap-1.5 select-none">
+              <span class="group-open:rotate-90 transition-transform">&rsaquo;</span>
+              <span>Cite (BibTeX)</span>
+            </summary>
+            <div class="mt-2 relative">
+              <pre class="p-3 rounded-xl bg-slate-900 text-slate-200 font-mono text-[11px] overflow-x-auto border border-slate-800"><code>{bibtexVcc}</code></pre>
+            </div>
+          </details>
+
           <div class="pt-4 border-t border-slate-100 dark:border-obsidian-border flex flex-wrap items-center gap-3">
             <a
               href="https://www.ieice.org/publications/search/summary.php?id=141053&tbl=ken&lang=en"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-matcha-600 hover:bg-matcha-700 text-white shadow-xs transition-colors"
+              class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-matcha-600 hover:bg-matcha-700 text-white shadow-xs transition-colors"
             >
               <span>IEICE Summary (#141053)</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
@@ -141,7 +181,7 @@ import Sidebar from '../components/Sidebar.astro';
               href="https://ken.ieice.org/ken/paper/20260127ocqa/"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-obsidian-850 hover:bg-slate-200 dark:hover:bg-obsidian-750 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-obsidian-border transition-colors"
+              class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-obsidian-850 hover:bg-slate-200 dark:hover:bg-obsidian-750 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-obsidian-border transition-colors"
             >
               <span>IEICE Paper Record (2026-01-27)</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>

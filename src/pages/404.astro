@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="404 — Page Not Found | Lennart Trunk"
+  description="The requested page could not be found."
+>
+  <div class="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 py-16">
+    <div class="w-16 h-16 rounded-2xl bg-sakura-50 dark:bg-sakura-600/15 border border-sakura-200 dark:border-sakura-500/30 flex items-center justify-center text-2xl mb-4">
+      🌸
+    </div>
+    <span class="text-xs font-mono font-bold uppercase tracking-wider text-matcha-600 dark:text-matcha-accent mb-1">
+      Error 404
+    </span>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-3">
+      Page Not Found • 見つかりません
+    </h1>
+    <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-md mb-6 leading-relaxed">
+      The link you followed may have moved or been retired during our architecture upgrade.
+    </p>
+    <a
+      href="/"
+      class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold bg-matcha-600 hover:bg-matcha-700 text-white shadow-xs transition-all"
+    >
+      <span>Return to Homepage</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+    </a>
+  </div>
+</Layout>
