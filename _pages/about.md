@@ -19,6 +19,25 @@ redirect_from:
   <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7; max-width: 820px;">
     Hello! I'm Lennart Trunk, a Computer Engineering Ph.D. student at <strong>Institute of Science Tokyo</strong> (東京科学大学, formerly Tokyo Tech) in the <strong>Architecture Laboratory (<a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer">ArchLab / 吉瀬研究室</a>)</strong>. My research investigates novel compiler infrastructure for high-speed RTL simulation acceleration, cycle-accurate RISC-V CPU modeling, and FPGA hardware prototyping.
   </p>
+
+  <!-- Quick Social & Profiles Row -->
+  <div class="hero-social-links" style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.25rem;">
+    <a href="https://github.com/renshi-code" target="_blank" rel="noopener noreferrer" class="social-chip">
+      <i class="fab fa-github"></i> <span>GitHub</span>
+    </a>
+    <a href="https://www.linkedin.com/in/lennart-trunk-85ab7014a" target="_blank" rel="noopener noreferrer" class="social-chip">
+      <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+    </a>
+    <a href="https://bsky.app/profile/renshi.me" target="_blank" rel="noopener noreferrer" class="social-chip">
+      <i class="fab fa-bluesky"></i> <span>Bluesky</span>
+    </a>
+    <a href="mailto:trunk.l.588d@m.isct.ac.jp" class="social-chip">
+      <i class="fas fa-envelope"></i> <span>Email</span>
+    </a>
+    <a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer" class="social-chip">
+      <i class="fas fa-microchip"></i> <span>ArchLab</span>
+    </a>
+  </div>
 </div>
 
 <!-- ================= BENTO GRID SHOWCASE ================= -->
