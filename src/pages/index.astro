@@ -78,13 +78,13 @@ import Sidebar from '../components/Sidebar.astro';
           <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
             Research &amp; Highlights
           </h2>
-          <span class="text-xs text-slate-400 dark:text-slate-500">Selected work &amp; milestones • 弁当箱</span>
+          <span class="text-xs text-slate-400 dark:text-slate-500">Selected work &amp; milestones</span>
         </div>
 
         <!-- Outer Bento Tray -->
         <div class="rounded-3xl p-3 sm:p-3.5 bg-slate-100/80 dark:bg-obsidian-850/90 border border-slate-200/90 dark:border-obsidian-border shadow-inner">
           <div class="grid grid-cols-1 md:grid-cols-6 gap-3">
-            <!-- Compartment 1: VCC Compiler (4 cols) -->
+            <!-- Compartment 1: SimRV (4 cols, Flagship Project) -->
             <div class="md:col-span-4 group bg-white dark:bg-obsidian-800 rounded-2xl p-5 sm:p-6 border border-slate-200/80 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all flex flex-col justify-between relative overflow-hidden">
               <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-matcha-400/10 dark:from-matcha-accent/10 to-transparent pointer-events-none rounded-bl-full"></div>
 
@@ -92,67 +92,67 @@ import Sidebar from '../components/Sidebar.astro';
                 <div class="flex flex-wrap items-center justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-700 dark:text-matcha-accent border border-matcha-200 dark:border-matcha-accent/30">
-                      Featured • 論文
+                      Featured Project
                     </span>
-                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">IEICE Jan 2026</span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">C++23 • MIT</span>
                   </div>
-                  <span class="text-xs font-medium text-matcha-600 dark:text-matcha-accent">Technical Report</span>
+                  <span class="text-xs font-medium text-matcha-600 dark:text-matcha-accent">Open Source Simulator</span>
                 </div>
 
                 <div>
                   <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white group-hover:text-matcha-600 dark:group-hover:text-matcha-accent transition-colors">
-                    <a href="https://www.ieice.org/publications/search/summary.php?id=141053&tbl=ken&lang=en" target="_blank" rel="noopener noreferrer">
-                      VCC: Verilog HDL Compiler for Accelerated RTL Simulation
+                    <a href="https://github.com/archlab-sciencetokyo/SimRV" target="_blank" rel="noopener noreferrer">
+                      SimRV: Dual-Width Explainable RISC-V System Simulator
                     </a>
                   </h3>
                   <p class="mt-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                    A dedicated hardware description language compiler that translates Verilog HDL circuits directly into optimized native simulation code to overcome execution bottlenecks in complex hardware verification.
+                    An explainable, dual-width (<code>RV32GCBV</code> / <code>RV64GCBV</code>) RISC-V research simulator with functional &amp; cycle-accurate modes, full-system Linux boot, Spike lockstep co-simulation, and a split-screen terminal workbench (TUI).
                   </p>
                 </div>
 
                 <div class="flex flex-wrap items-center gap-1.5 pt-1">
                   <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                    Verilog HDL
+                    RISC-V (RV32/RV64)
                   </span>
                   <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                    RTL Simulation
+                    C++23
                   </span>
                   <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                    Compiler Optimization
+                    Full-System Linux
                   </span>
                   <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                    C++ Compilation
+                    Terminal UI
                   </span>
                   <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                    Verilator
+                    Hardware/Software Codesign
                   </span>
                 </div>
               </div>
 
               <div class="mt-4 pt-3 border-t border-slate-100 dark:border-obsidian-border flex flex-wrap items-center gap-3 text-xs font-semibold">
                 <a
-                  href="https://www.ieice.org/publications/search/summary.php?id=141053&tbl=ken&lang=en"
+                  href="https://github.com/archlab-sciencetokyo/SimRV"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-matcha-600 dark:text-matcha-accent hover:underline flex items-center gap-1"
                 >
-                  <span>IEICE #141053</span>
+                  <span>GitHub (archlab-sciencetokyo/SimRV)</span>
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                 </a>
                 <a
-                  href="https://ken.ieice.org/ken/paper/20260127ocqa/"
+                  href="https://archlab-sciencetokyo.github.io/SimRV/stable/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white flex items-center gap-1"
                 >
-                  <span>Record (2026-01-27)</span>
+                  <span>Docs</span>
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                 </a>
                 <a
-                  href="/publications"
+                  href="/portfolio"
                   class="ml-auto text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent"
                 >
-                  Publications &rarr;
+                  Portfolio &rarr;
                 </a>
               </div>
             </div>
@@ -187,62 +187,7 @@ import Sidebar from '../components/Sidebar.astro';
               </div>
             </div>
 
-            <!-- Compartment 3: SimRV (3 cols) -->
-            <div class="md:col-span-3 group bg-white dark:bg-obsidian-800 rounded-2xl p-5 border border-slate-200/80 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all flex flex-col justify-between">
-              <div class="space-y-2.5">
-                <div class="flex items-center justify-between">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                    Open Source Simulator
-                  </span>
-                  <span class="text-xs font-mono text-slate-500 dark:text-slate-400">C++23</span>
-                </div>
-
-                <div>
-                  <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white group-hover:text-matcha-600 dark:group-hover:text-matcha-accent transition-colors">
-                    SimRV
-                  </h3>
-                  <p class="mt-1 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                    Dual-width (RV32GCBV / RV64GCBV) explainable RISC-V system simulator with functional &amp; cycle-accurate modes, full Linux boot, and a split-screen TUI.
-                  </p>
-                </div>
-
-                <div class="flex flex-wrap items-center gap-1.5 pt-0.5">
-                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                    RISC-V
-                  </span>
-                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                    Full-System Linux
-                  </span>
-                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                    TUI
-                  </span>
-                </div>
-              </div>
-
-              <div class="mt-4 pt-3 border-t border-slate-100 dark:border-obsidian-border flex flex-wrap items-center justify-between gap-2 text-xs font-semibold">
-                <div class="flex items-center gap-3">
-                  <a
-                    href="https://github.com/archlab-sciencetokyo/SimRV"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-matcha-600 dark:text-matcha-accent hover:underline"
-                  >
-                    GitHub &nearr;
-                  </a>
-                  <a
-                    href="https://archlab-sciencetokyo.github.io/SimRV/stable/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent"
-                  >
-                    Docs &nearr;
-                  </a>
-                </div>
-                <a href="/portfolio" class="text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent">Portfolio &rarr;</a>
-              </div>
-            </div>
-
-            <!-- Compartment 4: KitsuneRV (3 cols) -->
+            <!-- Compartment 3: KitsuneRV (3 cols) -->
             <div class="md:col-span-3 group bg-white dark:bg-obsidian-800 rounded-2xl p-5 border border-slate-200/80 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all flex flex-col justify-between">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between">
@@ -284,6 +229,51 @@ import Sidebar from '../components/Sidebar.astro';
                   GitHub (archlab-sciencetokyo/KitsuneRV) &nearr;
                 </a>
                 <a href="/portfolio" class="text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent">Portfolio &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Compartment 4: VCC Compiler (3 cols, earlier/starter project) -->
+            <div class="md:col-span-3 group bg-white dark:bg-obsidian-800 rounded-2xl p-5 border border-slate-200/80 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all flex flex-col justify-between">
+              <div class="space-y-2.5">
+                <div class="flex items-center justify-between">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    IEICE Technical Report
+                  </span>
+                  <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Jan 2026</span>
+                </div>
+
+                <div>
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white group-hover:text-matcha-600 dark:group-hover:text-matcha-accent transition-colors">
+                    VCC: Verilog HDL Compiler
+                  </h3>
+                  <p class="mt-1 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                    Earlier starter project translating Verilog HDL circuits into optimized native simulation code for accelerated RTL simulation.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-1.5 pt-0.5">
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    Verilog HDL
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    RTL Simulation
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    C++ Compilation
+                  </span>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-slate-100 dark:border-obsidian-border flex items-center justify-between text-xs font-semibold">
+                <a
+                  href="https://www.ieice.org/publications/search/summary.php?id=141053&tbl=ken&lang=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-matcha-600 dark:text-matcha-accent hover:underline"
+                >
+                  IEICE #141053 &nearr;
+                </a>
+                <a href="/publications" class="text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent">Publications &rarr;</a>
               </div>
             </div>
 
