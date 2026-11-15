@@ -97,14 +97,6 @@ import Sidebar from '../components/Sidebar.astro';
               <span>IEICE Paper Record (2026-01-27)</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
             </a>
-            <a
-              href="https://www.arch.cs.titech.ac.jp"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-xs font-semibold text-matcha-600 dark:text-matcha-accent hover:underline ml-auto"
-            >
-              ArchLab &rarr;
-            </a>
           </div>
         </article>
 
@@ -119,43 +111,43 @@ import Sidebar from '../components/Sidebar.astro';
                 IEEE MCSoC 2026
               </span>
             </div>
-            <span class="text-xs text-slate-400 dark:text-slate-500">C++23</span>
+            <span class="text-xs text-slate-400 dark:text-slate-500">C++23 • MIT</span>
           </div>
 
           <div>
             <h2 class="text-2xl font-bold text-slate-900 dark:text-white">
-              SimCore / RISC-V (SimRV) — Explainable Full-System RISC-V Simulator
+              SimRV — Dual-Width Explainable RISC-V System Simulator
             </h2>
             <p class="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              <a href="https://github.com/archlab-sciencetokyo/SimRV" target="_blank" rel="noopener noreferrer" class="text-matcha-600 dark:text-matcha-accent hover:underline font-semibold">SimRV</a> 
-              is an open-source, full-system RISC-V simulator engineered in C++23 at ArchLab, Science Tokyo. It bridges single-cycle pipeline hazard inspection and full Linux boot within a unified environment for computer architecture education and hardware/software codesign.
+              <a href="https://github.com/archlab-sciencetokyo/SimRV" target="_blank" rel="noopener noreferrer" class="text-matcha-600 dark:text-matcha-accent hover:underline font-semibold">SimRV</a>
+              is an explainable, dual-width (RV32 / RV64) RISC-V research simulator engineered in C++23 at ArchLab, Science Tokyo. It bridges single-cycle pipeline hazard inspection and full-system Linux OS emulation within a unified environment for architecture education and hardware/software codesign.
             </p>
           </div>
 
           <div class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
-            <h3 class="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-[11px]">Core Features &amp; Research Focus</h3>
+            <h3 class="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-[11px]">Core Features &amp; Architecture</h3>
             <ul class="list-disc list-inside space-y-1 text-slate-600 dark:text-slate-300">
-              <li><strong>Full-System RV32 / RV64 Simulation:</strong> Parametric RV32 and RV64 cores capable of running both introductory assembly and full Linux OS kernels with standard peripherals.</li>
-              <li><strong>Dual Execution Engines:</strong> Couples a fast functional interpreter (with direct-lookup decode caching) and a 5-stage cycle-oriented coroutine timing model with dynamic hazard detection.</li>
-              <li><strong>Split-Screen Terminal UI (TUI):</strong> Pairs live register, pipeline, and cache inspection with an active guest console over a PTY bridge—providing zero-trace causal stall explanations across local shells, WSL, and SSH.</li>
+              <li><strong>Dual-Width Full-System Emulation:</strong> Compile-time parametric <code>RV32GCBV</code> and <code>RV64GCBV</code> targets with MMU translation and MMIO peripherals (16550A UART, CLINT, PLIC, VirtIO block) for bare-metal and full Linux boot.</li>
+              <li><strong>Functional &amp; Cycle-Accurate Engines:</strong> Couples a fast functional interpreter (with direct-lookup decode caching) and a cycle-oriented coroutine timing model with dynamic hazard detection and Spike lockstep co-simulation.</li>
+              <li><strong>Interactive Terminal Workbench (TUI):</strong> Split-screen TUI over a PTY bridge pairing live register, pipeline, and cache hierarchy inspection with an active guest console across local shells, WSL, and SSH.</li>
             </ul>
           </div>
 
           <div class="flex flex-wrap gap-1.5 pt-2">
             <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-              RISC-V (RV32/64)
+              RISC-V (RV32GCBV / RV64GCBV)
             </span>
             <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
               C++23
             </span>
             <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              Full-System Linux
+            </span>
+            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              Terminal UI
+            </span>
+            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
               Hardware/Software Codesign
-            </span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-              Terminal User Interface
-            </span>
-            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-              Pipeline Hazards
             </span>
           </div>
 
@@ -170,13 +162,77 @@ import Sidebar from '../components/Sidebar.astro';
               <span>GitHub Repository</span>
             </a>
             <a
-              href="https://www.arch.cs.titech.ac.jp"
+              href="https://archlab-sciencetokyo.github.io/SimRV/stable/"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-obsidian-850 hover:bg-slate-200 dark:hover:bg-obsidian-750 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-obsidian-border transition-colors"
+              class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-matcha-600 hover:bg-matcha-700 text-white shadow-sm transition-colors"
             >
-              <span>ArchLab Lab Website</span>
+              <span>Documentation</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: KitsuneRV -->
+        <article class="bg-white dark:bg-obsidian-800 rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                FPGA RTL Kernel
+              </span>
+              <span class="px-2 py-0.5 rounded-md text-xs font-mono bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-700 dark:text-matcha-accent border border-matcha-200 dark:border-matcha-accent/30">
+                Alveo U50
+              </span>
+            </div>
+            <span class="text-xs text-slate-400 dark:text-slate-500">SystemVerilog</span>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white">
+              KitsuneRV — Direct-RTL FPGA Batch Kernel for SimRV
+            </h2>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              <a href="https://github.com/archlab-sciencetokyo/KitsuneRV" target="_blank" rel="noopener noreferrer" class="text-matcha-600 dark:text-matcha-accent hover:underline font-semibold">KitsuneRV</a>
+              is the direct SystemVerilog RTL implementation of SimRV's RVComp cycle-accurate batch kernel, complete with directed Verilator testbenches and Vitis RTL-kernel packaging for FPGA acceleration.
+            </p>
+          </div>
+
+          <div class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            <h3 class="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-[11px]">Key Components</h3>
+            <ul class="list-disc list-inside space-y-1 text-slate-600 dark:text-slate-300">
+              <li><strong>Direct-RTL Batch Kernel &amp; ABI:</strong> Implements the RVComp cycle-accurate batch kernel in SystemVerilog with a synchronized host/device protocol (<code>simrv_fpga_batch_abi_pkg.sv</code>) matching SimRV's XRT backend.</li>
+              <li><strong>Verilator RTL Regression:</strong> Includes a directed Verilator test suite integrated with SimRV's CTest build (<code>fpga-kitsunerv-rtl</code>).</li>
+              <li><strong>Vitis XO Packaging:</strong> Automates Vivado/Vitis RTL-kernel packaging (<code>package-xo.sh</code>) targeting AMD/Xilinx Alveo U50 (<code>xcu50-fsvh2104-2-e</code>).</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-1.5 pt-2">
+            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              SystemVerilog
+            </span>
+            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              FPGA
+            </span>
+            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              Verilator
+            </span>
+            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              Vitis RTL Kernel
+            </span>
+            <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              RISC-V
+            </span>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 dark:border-obsidian-border flex flex-wrap items-center gap-3">
+            <a
+              href="https://github.com/archlab-sciencetokyo/KitsuneRV"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 hover:bg-slate-800 dark:bg-white dark:hover:bg-slate-100 text-white dark:text-slate-900 shadow-sm transition-colors"
+            >
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub Repository</span>
             </a>
           </div>
         </article>

@@ -72,219 +72,256 @@ import Sidebar from '../components/Sidebar.astro';
         </div>
       </section>
 
-      <!-- Featured Research Section -->
+      <!-- Featured Research Bento Box -->
       <section class="space-y-4">
         <div class="flex items-center justify-between">
           <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
             Research &amp; Highlights
           </h2>
-          <span class="text-xs text-slate-400 dark:text-slate-500">Selected work &amp; milestones</span>
+          <span class="text-xs text-slate-400 dark:text-slate-500">Selected work &amp; milestones • 弁当箱</span>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <!-- Featured Card 1: VCC Compiler (Full Width) -->
-          <div class="md:col-span-2 group bg-white dark:bg-obsidian-800 rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all flex flex-col justify-between relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-matcha-400/10 dark:from-matcha-accent/10 to-transparent pointer-events-none rounded-bl-full"></div>
+        <!-- Outer Bento Tray -->
+        <div class="rounded-3xl p-3 sm:p-3.5 bg-slate-100/80 dark:bg-obsidian-850/90 border border-slate-200/90 dark:border-obsidian-border shadow-inner">
+          <div class="grid grid-cols-1 md:grid-cols-6 gap-3">
+            <!-- Compartment 1: VCC Compiler (4 cols) -->
+            <div class="md:col-span-4 group bg-white dark:bg-obsidian-800 rounded-2xl p-5 sm:p-6 border border-slate-200/80 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all flex flex-col justify-between relative overflow-hidden">
+              <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-matcha-400/10 dark:from-matcha-accent/10 to-transparent pointer-events-none rounded-bl-full"></div>
 
-            <div class="space-y-4">
-              <div class="flex flex-wrap items-center justify-between gap-2">
-                <div class="flex items-center gap-2">
-                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-700 dark:text-matcha-accent border border-matcha-200 dark:border-matcha-accent/30">
-                    Featured Research • 論文
-                  </span>
-                  <span class="text-xs font-mono text-slate-500 dark:text-slate-400">IEICE Jan 2026</span>
+              <div class="space-y-3">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-700 dark:text-matcha-accent border border-matcha-200 dark:border-matcha-accent/30">
+                      Featured • 論文
+                    </span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">IEICE Jan 2026</span>
+                  </div>
+                  <span class="text-xs font-medium text-matcha-600 dark:text-matcha-accent">Technical Report</span>
                 </div>
-                <span class="text-xs font-medium text-matcha-600 dark:text-matcha-accent">Technical Report</span>
+
+                <div>
+                  <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white group-hover:text-matcha-600 dark:group-hover:text-matcha-accent transition-colors">
+                    <a href="https://www.ieice.org/publications/search/summary.php?id=141053&tbl=ken&lang=en" target="_blank" rel="noopener noreferrer">
+                      VCC: Verilog HDL Compiler for Accelerated RTL Simulation
+                    </a>
+                  </h3>
+                  <p class="mt-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                    A dedicated hardware description language compiler that translates Verilog HDL circuits directly into optimized native simulation code to overcome execution bottlenecks in complex hardware verification.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-1.5 pt-1">
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    Verilog HDL
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    RTL Simulation
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    Compiler Optimization
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    C++ Compilation
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    Verilator
+                  </span>
+                </div>
               </div>
 
-              <div>
-                <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white group-hover:text-matcha-600 dark:group-hover:text-matcha-accent transition-colors">
-                  <a href="https://www.ieice.org/publications/search/summary.php?id=141053&tbl=ken&lang=en" target="_blank" rel="noopener noreferrer">
-                    VCC: Verilog HDL Compiler for Accelerated RTL Simulation
-                  </a>
+              <div class="mt-4 pt-3 border-t border-slate-100 dark:border-obsidian-border flex flex-wrap items-center gap-3 text-xs font-semibold">
+                <a
+                  href="https://www.ieice.org/publications/search/summary.php?id=141053&tbl=ken&lang=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-matcha-600 dark:text-matcha-accent hover:underline flex items-center gap-1"
+                >
+                  <span>IEICE #141053</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </a>
+                <a
+                  href="https://ken.ieice.org/ken/paper/20260127ocqa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white flex items-center gap-1"
+                >
+                  <span>Record (2026-01-27)</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </a>
+                <a
+                  href="/publications"
+                  class="ml-auto text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent"
+                >
+                  Publications &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Compartment 2: IEEE MCSoC 2026 (2 cols, compact vertical accent tile) -->
+            <div class="md:col-span-2 group bg-gradient-to-b from-sakura-50/60 to-white dark:from-sakura-600/10 dark:to-obsidian-800 rounded-2xl p-5 border border-sakura-200/70 dark:border-sakura-500/30 hover:border-sakura-400 dark:hover:border-sakura-400/60 shadow-sm transition-all flex flex-col justify-between">
+              <div class="space-y-2.5">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-bold uppercase tracking-wider bg-sakura-100/80 dark:bg-sakura-600/20 text-sakura-700 dark:text-sakura-300 border border-sakura-200 dark:border-sakura-500/30">
+                    MCSoC 2026
+                  </span>
+                  <span class="text-[11px] font-mono text-slate-500 dark:text-slate-400">#254</span>
+                </div>
+
+                <h3 class="text-base font-bold text-slate-900 dark:text-white leading-snug group-hover:text-sakura-600 dark:group-hover:text-sakura-400 transition-colors">
+                  SimRV: An Explainable RISC-V Full-System Simulator
                 </h3>
-                <p class="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  A specialized hardware description language compiler that translates Verilog HDL circuits directly into optimized simulation code to overcome severe execution bottlenecks in complex hardware verification.
+
+                <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  For Architecture Education &amp; Hardware/Software Codesign.
                 </p>
+
+                <div class="pt-1 space-y-1 text-[11px] font-mono text-slate-600 dark:text-slate-300">
+                  <div>Dec 17, 2026 · 12:05 (UTC+8)</div>
+                  <div class="text-slate-500 dark:text-slate-400">Session A16 · Room A</div>
+                </div>
               </div>
 
-              <div class="flex flex-wrap items-center gap-2 pt-1">
-                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Verilog HDL
-                </span>
-                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  RTL Simulation
-                </span>
-                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Compiler Optimization
-                </span>
-                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  C++ Compilation
-                </span>
-                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Verilator
-                </span>
-              </div>
-            </div>
-
-            <div class="mt-5 pt-4 border-t border-slate-100 dark:border-obsidian-border flex flex-wrap items-center gap-4 text-xs font-semibold">
-              <a
-                href="https://www.ieice.org/publications/search/summary.php?id=141053&tbl=ken&lang=en"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-matcha-600 dark:text-matcha-accent hover:underline flex items-center gap-1"
-              >
-                <span>IEICE Summary (#141053)</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-              </a>
-              <a
-                href="https://ken.ieice.org/ken/paper/20260127ocqa/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white flex items-center gap-1"
-              >
-                <span>Paper Record (2026-01-27)</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-              </a>
-              <a
-                href="/publications"
-                class="ml-auto text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent"
-              >
-                All publications &rarr;
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 2: Upcoming IEEE MCSoC 2026 -->
-          <div class="group bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border hover:border-sakura-400 dark:hover:border-sakura-400/50 shadow-sm transition-all flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-sakura-50 dark:bg-sakura-600/15 text-sakura-600 dark:text-sakura-400 border border-sakura-200 dark:border-sakura-500/30">
-                  Upcoming • 注目
-                </span>
-                <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Dec 2026</span>
-              </div>
-
-              <div>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-sakura-600 dark:group-hover:text-sakura-400 transition-colors">
-                  IEEE MCSoC 2026 Conference Paper
-                </h3>
-                <p class="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  <strong>SimRV: An Explainable RISC-V Full-System Simulator for Architecture Education and Hardware/Software Codesign</strong> — bridging single-cycle hazard inspection and full Linux boot in C++23 with a split-screen TUI.
-                </p>
-              </div>
-
-              <div class="flex flex-wrap items-center gap-1.5 pt-1">
-                <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  RISC-V
-                </span>
-                <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Architecture Education
-                </span>
-                <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Hardware/Software Codesign
-                </span>
-                <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Terminal User Interface
-                </span>
-                <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Pipeline Hazards
-                </span>
-              </div>
-            </div>
-
-            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-obsidian-border flex flex-wrap items-center justify-between gap-2 text-xs font-semibold">
-              <span class="text-sakura-600 dark:text-sakura-400">Dec 17, 2026 · Session A16</span>
-              <div class="flex items-center gap-3">
-                <a href="https://mcsoc-forum.org/site/index.php/program-2/" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-sakura-600 dark:hover:text-sakura-400">Program &nearr;</a>
+              <div class="mt-4 pt-3 border-t border-sakura-200/50 dark:border-sakura-500/20 flex items-center justify-between text-xs font-semibold">
+                <a href="https://mcsoc-forum.org/site/index.php/program-2/" target="_blank" rel="noopener noreferrer" class="text-sakura-600 dark:text-sakura-400 hover:underline">Program &nearr;</a>
                 <a href="/publications" class="text-slate-500 hover:text-sakura-600 dark:hover:text-sakura-400">Details &rarr;</a>
               </div>
             </div>
-          </div>
 
-          <!-- Card 3: Open-Source Engine — SimRV -->
-          <div class="group bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  ArchLab Open Source
-                </span>
-                <span class="text-xs font-mono text-slate-500 dark:text-slate-400">C++23</span>
+            <!-- Compartment 3: SimRV (3 cols) -->
+            <div class="md:col-span-3 group bg-white dark:bg-obsidian-800 rounded-2xl p-5 border border-slate-200/80 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all flex flex-col justify-between">
+              <div class="space-y-2.5">
+                <div class="flex items-center justify-between">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    Open Source Simulator
+                  </span>
+                  <span class="text-xs font-mono text-slate-500 dark:text-slate-400">C++23</span>
+                </div>
+
+                <div>
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white group-hover:text-matcha-600 dark:group-hover:text-matcha-accent transition-colors">
+                    SimRV
+                  </h3>
+                  <p class="mt-1 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                    Dual-width (RV32GCBV / RV64GCBV) explainable RISC-V system simulator with functional &amp; cycle-accurate modes, full Linux boot, and a split-screen TUI.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-1.5 pt-0.5">
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    RISC-V
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    Full-System Linux
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    TUI
+                  </span>
+                </div>
               </div>
 
-              <div>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-matcha-600 dark:group-hover:text-matcha-accent transition-colors">
-                  SimCore / RISC-V (SimRV)
-                </h3>
-                <p class="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Explainable full-system RISC-V (RV32/RV64) simulator engineered in C++23 at ArchLab. Combines a fast functional interpreter (Linux boot) with a 5-stage cycle-oriented coroutine timing model and a split-screen TUI.
-                </p>
-              </div>
-
-              <div class="flex flex-wrap items-center gap-1.5 pt-1">
-                <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  RISC-V (RV32/64)
-                </span>
-                <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  C++23
-                </span>
-                <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Full-System Simulation
-                </span>
-                <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Split-Screen TUI
-                </span>
+              <div class="mt-4 pt-3 border-t border-slate-100 dark:border-obsidian-border flex flex-wrap items-center justify-between gap-2 text-xs font-semibold">
+                <div class="flex items-center gap-3">
+                  <a
+                    href="https://github.com/archlab-sciencetokyo/SimRV"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-matcha-600 dark:text-matcha-accent hover:underline"
+                  >
+                    GitHub &nearr;
+                  </a>
+                  <a
+                    href="https://archlab-sciencetokyo.github.io/SimRV/stable/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent"
+                  >
+                    Docs &nearr;
+                  </a>
+                </div>
+                <a href="/portfolio" class="text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent">Portfolio &rarr;</a>
               </div>
             </div>
 
-            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-obsidian-border flex items-center justify-between text-xs font-semibold">
-              <a
-                href="https://github.com/archlab-sciencetokyo/SimRV"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-matcha-600 dark:text-matcha-accent hover:underline flex items-center gap-1"
-              >
-                <span>GitHub (archlab-sciencetokyo/SimRV)</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-              </a>
-              <a href="/portfolio" class="text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent">Portfolio &rarr;</a>
+            <!-- Compartment 4: KitsuneRV (3 cols) -->
+            <div class="md:col-span-3 group bg-white dark:bg-obsidian-800 rounded-2xl p-5 border border-slate-200/80 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all flex flex-col justify-between">
+              <div class="space-y-2.5">
+                <div class="flex items-center justify-between">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    FPGA RTL Kernel
+                  </span>
+                  <span class="text-xs font-mono text-slate-500 dark:text-slate-400">SystemVerilog</span>
+                </div>
+
+                <div>
+                  <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white group-hover:text-matcha-600 dark:group-hover:text-matcha-accent transition-colors">
+                    KitsuneRV
+                  </h3>
+                  <p class="mt-1 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                    Direct SystemVerilog RTL implementation of SimRV's RVComp cycle-accurate batch kernel, with Verilator testbenches and Vitis XO packaging for Alveo U50.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-1.5 pt-0.5">
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    Alveo U50
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    Verilator
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    Vitis RTL
+                  </span>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-slate-100 dark:border-obsidian-border flex items-center justify-between text-xs font-semibold">
+                <a
+                  href="https://github.com/archlab-sciencetokyo/KitsuneRV"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-matcha-600 dark:text-matcha-accent hover:underline"
+                >
+                  GitHub (archlab-sciencetokyo/KitsuneRV) &nearr;
+                </a>
+                <a href="/portfolio" class="text-slate-500 hover:text-matcha-600 dark:hover:text-matcha-accent">Portfolio &rarr;</a>
+              </div>
             </div>
-          </div>
 
-          <!-- Card 4: Academic Roots & Global Research Journey (Full Width) -->
-          <div class="md:col-span-2 bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border shadow-sm">
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Academic Path
-                </span>
-                <span class="text-xs text-slate-500 dark:text-slate-400">Tokyo &amp; Hannover</span>
-              </div>
-              <a href="/cv" class="text-xs font-semibold text-matcha-600 dark:text-matcha-accent hover:underline">
-                View Full Timeline &rarr;
-              </a>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
-              <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-obsidian-850 border border-slate-100 dark:border-obsidian-border">
-                <p class="font-bold text-slate-800 dark:text-slate-200">Doctor of Philosophy</p>
-                <p class="text-slate-500 dark:text-slate-400 mt-0.5">Institute of Science Tokyo</p>
-                <p class="text-[11px] text-matcha-600 dark:text-matcha-accent mt-1">Sep 2025 — Present</p>
-                <p class="text-[11px] text-slate-400 mt-1">Kise Laboratory (ArchLab)</p>
+            <!-- Compartment 5: Academic Path (Full Width 6 cols) -->
+            <div class="md:col-span-6 bg-white dark:bg-obsidian-800 rounded-2xl p-5 border border-slate-200/80 dark:border-obsidian-border shadow-sm">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <div class="flex items-center gap-2">
+                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                    Academic Path
+                  </span>
+                  <span class="text-xs text-slate-500 dark:text-slate-400">Tokyo &amp; Hannover</span>
+                </div>
+                <a href="/cv" class="text-xs font-semibold text-matcha-600 dark:text-matcha-accent hover:underline">
+                  View Full Timeline &rarr;
+                </a>
               </div>
 
-              <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-obsidian-850 border border-slate-100 dark:border-obsidian-border">
-                <p class="font-bold text-slate-800 dark:text-slate-200">YSEP Exchange</p>
-                <p class="text-slate-500 dark:text-slate-400 mt-0.5">Tokyo Institute of Technology</p>
-                <p class="text-[11px] text-sakura-600 dark:text-sakura-400 mt-1">Exchange Student</p>
-                <p class="text-[11px] text-slate-400 mt-1">ArchLab (Kise Laboratory)</p>
-              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-obsidian-850 border border-slate-100 dark:border-obsidian-border">
+                  <p class="font-bold text-slate-800 dark:text-slate-200">Doctor of Philosophy</p>
+                  <p class="text-slate-500 dark:text-slate-400 mt-0.5">Institute of Science Tokyo</p>
+                  <p class="text-[11px] text-matcha-600 dark:text-matcha-accent mt-1">Sep 2025 — Present</p>
+                  <p class="text-[11px] text-slate-400 mt-1">Kise Laboratory (ArchLab)</p>
+                </div>
 
-              <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-obsidian-850 border border-slate-100 dark:border-obsidian-border">
-                <p class="font-bold text-slate-800 dark:text-slate-200">M.Sc. &amp; B.Sc. Computer Engineering</p>
-                <p class="text-slate-500 dark:text-slate-400 mt-0.5">Leibniz University Hannover</p>
-                <p class="text-[11px] text-slate-400 mt-1">Germany</p>
-                <p class="text-[11px] text-slate-400 mt-1">High-performance systems</p>
+                <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-obsidian-850 border border-slate-100 dark:border-obsidian-border">
+                  <p class="font-bold text-slate-800 dark:text-slate-200">YSEP Exchange</p>
+                  <p class="text-slate-500 dark:text-slate-400 mt-0.5">Tokyo Institute of Technology</p>
+                  <p class="text-[11px] text-sakura-600 dark:text-sakura-400 mt-1">Exchange Student</p>
+                  <p class="text-[11px] text-slate-400 mt-1">ArchLab (Kise Laboratory)</p>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-obsidian-850 border border-slate-100 dark:border-obsidian-border">
+                  <p class="font-bold text-slate-800 dark:text-slate-200">M.Sc. &amp; B.Sc. Computer Engineering</p>
+                  <p class="text-slate-500 dark:text-slate-400 mt-0.5">Leibniz University Hannover</p>
+                  <p class="text-[11px] text-slate-400 mt-1">Germany</p>
+                  <p class="text-[11px] text-slate-400 mt-1">High-performance systems</p>
+                </div>
               </div>
             </div>
           </div>
