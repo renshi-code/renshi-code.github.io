@@ -7,15 +7,15 @@ const bibtexVcc = `@article{trunk2026vcc,
   title     = {Design and Implementation of a Verilog HDL Compiler to Accelerate RTL Simulation},
   journal   = {IEICE Technical Report},
   volume    = {125},
-  number    = {342},
-  pages     = {119--124},
+  number    = {VLD-341, RECONF-342},
+  pages     = {12--17},
   year      = {2026},
   publisher = {The Institute of Electronics, Information and Communication Engineers}
 }`;
 
 const bibtexMcsoc = `@inproceedings{trunk2026simrv,
   author    = {Lennart Trunk and Kenji Kise},
-  title     = {Cycle-Accurate Pipeline Simulation and Custom Function Unit Verification in SimRV},
+  title     = {SimRV: An Explainable RISC-V Full-System Simulator for Architecture Education and Hardware/Software Codesign},
   booktitle = {IEEE International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC)},
   year      = {2026},
   month     = {December}
@@ -48,7 +48,7 @@ const bibtexMcsoc = `@inproceedings{trunk2026simrv,
       <!-- Publications List -->
       <div class="space-y-6">
         <!-- Publication 1: Forthcoming IEEE MCSoC 2026 -->
-        <article class="bg-white dark:bg-obsidian-800 rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-obsidian-border hover:border-sakura-400 dark:hover:border-sakura-400/50 shadow-xs transition-all space-y-4">
+        <article class="bg-white dark:bg-obsidian-800 rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-obsidian-border hover:border-sakura-400 dark:hover:border-sakura-400/50 shadow-sm transition-all space-y-4">
           <div class="flex flex-wrap items-center justify-between gap-2">
             <div class="flex flex-wrap items-center gap-2">
               <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-sakura-50 dark:bg-sakura-600/15 text-sakura-600 dark:text-sakura-400 border border-sakura-200 dark:border-sakura-500/30">
@@ -63,7 +63,7 @@ const bibtexMcsoc = `@inproceedings{trunk2026simrv,
 
           <div>
             <h2 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
-              Cycle-Accurate Pipeline Simulation and Custom Function Unit Verification in SimRV
+              SimRV: An Explainable RISC-V Full-System Simulator for Architecture Education and Hardware/Software Codesign
             </h2>
             <p class="mt-1 text-sm font-medium text-matcha-700 dark:text-matcha-accent">
               <strong>Lennart Trunk</strong>, Kenji Kise
@@ -74,7 +74,7 @@ const bibtexMcsoc = `@inproceedings{trunk2026simrv,
           </div>
 
           <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            This work investigates cycle-accurate software simulation for RISC-V processors extended with domain-specific Custom Function Units (CFU), demonstrating high-fidelity 5-stage coroutine pipeline modeling in SimRV for rapid architectural exploration without sacrificing simulation throughput.
+            SimRV is an open-source full-system RISC-V simulator engineered in C++23 that bridges single-cycle pipeline hazard inspection and full Linux boot within a unified environment. It pairs a fast functional interpreter (265.51 MIPS on RV64 CoreMark) and a 5-stage cycle-oriented coroutine timing model with a split-screen terminal user interface (TUI) for live register, pipeline, and cache inspection.
           </p>
 
           <div class="flex flex-wrap gap-1.5 pt-1">
@@ -82,13 +82,16 @@ const bibtexMcsoc = `@inproceedings{trunk2026simrv,
               RISC-V
             </span>
             <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-              Custom Function Unit (CFU)
+              Computer Architecture Education
             </span>
             <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-              Pipeline Simulation
+              Hardware/Software Codesign
             </span>
             <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-              C++20 Coroutines
+              Terminal User Interface
+            </span>
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+              Pipeline Hazards
             </span>
           </div>
 
@@ -112,7 +115,7 @@ const bibtexMcsoc = `@inproceedings{trunk2026simrv,
         </article>
 
         <!-- Publication 2: IEICE VCC Paper -->
-        <article class="bg-white dark:bg-obsidian-800 rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-xs transition-all space-y-4">
+        <article class="bg-white dark:bg-obsidian-800 rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all space-y-4">
           <div class="flex flex-wrap items-center justify-between gap-2">
             <div class="flex flex-wrap items-center gap-2">
               <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-700 dark:text-matcha-accent border border-matcha-200 dark:border-matcha-accent/30">
@@ -133,7 +136,7 @@ const bibtexMcsoc = `@inproceedings{trunk2026simrv,
               <strong>Lennart Trunk</strong>, Yuki Yagi, Kenji Kise
             </p>
             <p class="mt-1 text-xs text-slate-500 dark:text-slate-400 italic">
-              IEICE Technical Report, Vol. 125, No. 342, RECONF2025-120 / VLD2025-69, pp. 119-124 (January 27, 2026)
+              IEICE Technical Report, Vol. 125, No. VLD-341 / RECONF-342, RECONF2025-120 / VLD2025-69, pp. 12-17 (January 27, 2026)
             </p>
           </div>
 
@@ -175,7 +178,7 @@ const bibtexMcsoc = `@inproceedings{trunk2026simrv,
               href="https://www.ieice.org/publications/search/summary.php?id=141053&tbl=ken&lang=en"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-matcha-600 hover:bg-matcha-700 text-white shadow-xs transition-colors"
+              class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-matcha-600 hover:bg-matcha-700 text-white shadow-sm transition-colors"
             >
               <span>IEICE Summary (#141053)</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>

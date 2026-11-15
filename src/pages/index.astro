@@ -37,7 +37,7 @@ import Sidebar from '../components/Sidebar.astro';
         </h1>
 
         <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-          Hello! I am <strong class="font-semibold text-slate-900 dark:text-white">Lennart Trunk</strong>, a Computer Engineering Ph.D. student at 
+          Hello! I am <strong class="font-semibold text-slate-900 dark:text-white">Lennart Trunk</strong>, a Computer Science (情報工学コース) Ph.D. student at 
           <a href="https://www.isct.ac.jp" target="_blank" rel="noopener noreferrer" class="text-matcha-700 dark:text-matcha-accent hover:underline font-medium">Institute of Science Tokyo</a> 
           (東京科学大学, formerly Tokyo Tech) in the 
           <a href="https://www.arch.cs.titech.ac.jp" target="_blank" rel="noopener noreferrer" class="text-matcha-700 dark:text-matcha-accent hover:underline font-medium">Architecture Laboratory (ArchLab / 吉瀬研究室)</a>.
@@ -58,14 +58,14 @@ import Sidebar from '../components/Sidebar.astro';
           </a>
           <a
             href="/publications"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-white dark:bg-obsidian-800 hover:bg-slate-50 dark:hover:bg-obsidian-750 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-white dark:bg-obsidian-800 hover:bg-slate-50 dark:hover:bg-obsidian-750 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-sm transition-all"
           >
             <span>Publications</span>
             <span class="w-2 h-2 rounded-full bg-sakura-500"></span>
           </a>
           <a
             href="/cv"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-white dark:bg-obsidian-800 hover:bg-slate-50 dark:hover:bg-obsidian-750 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-white dark:bg-obsidian-800 hover:bg-slate-50 dark:hover:bg-obsidian-750 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-sm transition-all"
           >
             <span>Curriculum Vitae</span>
           </a>
@@ -83,7 +83,7 @@ import Sidebar from '../components/Sidebar.astro';
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
           <!-- Featured Card 1: VCC Compiler (Full Width) -->
-          <div class="md:col-span-2 group bg-white dark:bg-obsidian-800 rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-xs transition-all flex flex-col justify-between relative overflow-hidden">
+          <div class="md:col-span-2 group bg-white dark:bg-obsidian-800 rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all flex flex-col justify-between relative overflow-hidden">
             <div class="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-matcha-400/10 dark:from-matcha-accent/10 to-transparent pointer-events-none rounded-bl-full"></div>
 
             <div class="space-y-4">
@@ -94,7 +94,7 @@ import Sidebar from '../components/Sidebar.astro';
                   </span>
                   <span class="text-xs font-mono text-slate-500 dark:text-slate-400">IEICE Jan 2026</span>
                 </div>
-                <span class="text-xs font-medium text-matcha-600 dark:text-matcha-accent">Kenkyukai Report &rarr;</span>
+                <span class="text-xs font-medium text-matcha-600 dark:text-matcha-accent">Technical Report</span>
               </div>
 
               <div>
@@ -156,7 +156,7 @@ import Sidebar from '../components/Sidebar.astro';
           </div>
 
           <!-- Card 2: Upcoming IEEE MCSoC 2026 -->
-          <div class="group bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border hover:border-sakura-400 dark:hover:border-sakura-400/50 shadow-xs transition-all flex flex-col justify-between">
+          <div class="group bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border hover:border-sakura-400 dark:hover:border-sakura-400/50 shadow-sm transition-all flex flex-col justify-between">
             <div class="space-y-3">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-sakura-50 dark:bg-sakura-600/15 text-sakura-600 dark:text-sakura-400 border border-sakura-200 dark:border-sakura-500/30">
@@ -170,7 +170,7 @@ import Sidebar from '../components/Sidebar.astro';
                   IEEE MCSoC 2026 Conference Paper
                 </h3>
                 <p class="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Cycle-accurate 5-stage coroutine pipeline simulation and Custom Function Unit (CFU) modeling for RISC-V processors in SimRV.
+                  <strong>SimRV: An Explainable RISC-V Full-System Simulator for Architecture Education and Hardware/Software Codesign</strong> — bridging single-cycle hazard inspection and full Linux boot in C++23 with a split-screen TUI.
                 </p>
               </div>
 
@@ -179,13 +179,16 @@ import Sidebar from '../components/Sidebar.astro';
                   RISC-V
                 </span>
                 <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Custom Function Unit (CFU)
+                  Architecture Education
                 </span>
                 <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Pipeline Simulation
+                  Hardware/Software Codesign
                 </span>
                 <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  C++20 Coroutines
+                  Terminal User Interface
+                </span>
+                <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
+                  Pipeline Hazards
                 </span>
               </div>
             </div>
@@ -197,13 +200,13 @@ import Sidebar from '../components/Sidebar.astro';
           </div>
 
           <!-- Card 3: Open-Source Engine — SimRV -->
-          <div class="group bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-xs transition-all flex flex-col justify-between">
+          <div class="group bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all flex flex-col justify-between">
             <div class="space-y-3">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
                   ArchLab Open Source
                 </span>
-                <span class="text-xs font-mono text-slate-500 dark:text-slate-400">C++20</span>
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400">C++23</span>
               </div>
 
               <div>
@@ -211,7 +214,7 @@ import Sidebar from '../components/Sidebar.astro';
                   SimCore / RISC-V (SimRV)
                 </h3>
                 <p class="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  High-performance cycle-accurate RISC-V microarchitecture simulator developed at ArchLab. Leverages modern C++20 coroutines to simulate 5-stage in-order pipelines, hazard stalls, and CFU hardware extensions.
+                  Explainable full-system RISC-V (RV32/RV64) simulator engineered in C++23 at ArchLab. Combines a fast functional interpreter (Linux boot) with a 5-stage cycle-oriented coroutine timing model and a split-screen TUI.
                 </p>
               </div>
 
@@ -220,13 +223,13 @@ import Sidebar from '../components/Sidebar.astro';
                   RISC-V (RV32/64)
                 </span>
                 <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  C++20 Coroutines
+                  C++23
                 </span>
                 <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  Cycle-Accurate Simulation
+                  Full-System Simulation
                 </span>
                 <span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
-                  CFU Extensions
+                  Split-Screen TUI
                 </span>
               </div>
             </div>
@@ -246,7 +249,7 @@ import Sidebar from '../components/Sidebar.astro';
           </div>
 
           <!-- Card 4: Academic Roots & Global Research Journey (Full Width) -->
-          <div class="md:col-span-2 bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border shadow-xs">
+          <div class="md:col-span-2 bg-white dark:bg-obsidian-800 rounded-2xl p-6 border border-slate-200 dark:border-obsidian-border shadow-sm">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
               <div class="flex items-center gap-2">
                 <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-obsidian-border">
@@ -275,7 +278,7 @@ import Sidebar from '../components/Sidebar.astro';
               </div>
 
               <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-obsidian-850 border border-slate-100 dark:border-obsidian-border">
-                <p class="font-bold text-slate-800 dark:text-slate-200">M.Sc. &amp; B.Sc. CompSci</p>
+                <p class="font-bold text-slate-800 dark:text-slate-200">M.Sc. &amp; B.Sc. Computer Engineering</p>
                 <p class="text-slate-500 dark:text-slate-400 mt-0.5">Leibniz University Hannover</p>
                 <p class="text-[11px] text-slate-400 mt-1">Germany</p>
                 <p class="text-[11px] text-slate-400 mt-1">High-performance systems</p>
@@ -292,7 +295,7 @@ import Sidebar from '../components/Sidebar.astro';
         </h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div class="p-5 rounded-2xl bg-white dark:bg-obsidian-800 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all space-y-2">
+          <div class="p-5 rounded-2xl bg-white dark:bg-obsidian-800 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-sm transition-all space-y-2">
             <div class="w-8 h-8 rounded-lg bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-600 dark:text-matcha-accent flex items-center justify-center font-bold text-base">
               ⚡
             </div>
@@ -302,17 +305,17 @@ import Sidebar from '../components/Sidebar.astro';
             </p>
           </div>
 
-          <div class="p-5 rounded-2xl bg-white dark:bg-obsidian-800 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all space-y-2">
+          <div class="p-5 rounded-2xl bg-white dark:bg-obsidian-800 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-sm transition-all space-y-2">
             <div class="w-8 h-8 rounded-lg bg-sakura-50 dark:bg-sakura-600/15 text-sakura-600 dark:text-sakura-400 flex items-center justify-center font-bold text-base">
               🖥️
             </div>
             <h3 class="font-bold text-sm text-slate-900 dark:text-white">RISC-V Microarchitecture</h3>
             <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-              Cycle-accurate 5-stage coroutine pipeline simulation, Custom Function Units (CFU), and hardware/software co-verification.
+              Full-system RV32/RV64 simulation, 5-stage cycle-oriented coroutine pipelines, live hazard/cache explainability, and hardware/software codesign.
             </p>
           </div>
 
-          <div class="p-5 rounded-2xl bg-white dark:bg-obsidian-800 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-xs transition-all space-y-2">
+          <div class="p-5 rounded-2xl bg-white dark:bg-obsidian-800 border border-slate-200 dark:border-obsidian-border hover:border-matcha-300 dark:hover:border-matcha-accent/40 shadow-sm transition-all space-y-2">
             <div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-obsidian-850 text-slate-700 dark:text-slate-300 flex items-center justify-center font-bold text-base">
               ⚙️
             </div>
