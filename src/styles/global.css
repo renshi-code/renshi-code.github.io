@@ -40,3 +40,20 @@ html.dark ::-webkit-scrollbar-thumb {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(82, 183, 136, 0.5);
 }
+
+@media print {
+  @page {
+    margin: 1.4cm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  section,
+  article,
+  .rounded-2xl {
+    break-inside: avoid;
+  }
+}

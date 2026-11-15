@@ -13,15 +13,31 @@ import Sidebar from '../components/Sidebar.astro';
     <main class="flex-1 min-w-0 space-y-10">
       <!-- Page Header -->
       <div class="space-y-2">
-        <div>
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-700 dark:text-matcha-accent border border-matcha-200 dark:border-matcha-accent/30">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <span class="print:hidden inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-matcha-50 dark:bg-matcha-accent/15 text-matcha-700 dark:text-matcha-accent border border-matcha-200 dark:border-matcha-accent/30">
             Timeline • 経歴
           </span>
+          <button
+            type="button"
+            onclick="window.print()"
+            class="print:hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-obsidian-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-obsidian-border hover:border-matcha-400 dark:hover:border-matcha-accent/50 shadow-sm transition-all"
+          >
+            <svg class="w-3.5 h-3.5 text-matcha-600 dark:text-matcha-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+            <span>Print / Save PDF</span>
+          </button>
         </div>
-        <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+        <div class="hidden print:block pb-2 border-b border-slate-300">
+          <div class="text-2xl font-extrabold text-slate-900">Lennart Trunk</div>
+          <div class="text-xs text-slate-600">
+            Ph.D. Student in Computer Science (情報工学コース) · Institute of Science Tokyo · renshi.me · trunk.l.588d@m.isct.ac.jp
+          </div>
+        </div>
+        <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white print:hidden">
           Curriculum Vitae
         </h1>
-        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300">
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 print:hidden">
           Academic education, international exchange programs, and professional software engineering experience.
         </p>
       </div>
